@@ -135,7 +135,9 @@ export default function Navbar() {
               shadow-sm
             "
           >
-            Book Demo
+           <Link href="/book-demo">
+    Book A Demo
+  </Link>
           </Button>
         </div>
 

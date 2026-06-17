@@ -1,5 +1,6 @@
 import { Button } from "@/Common/UI/Button/Button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function EnterpriseCTA() {
   return (
@@ -26,9 +27,11 @@ export default function EnterpriseCTA() {
               Book a Personalized Demo to see how ShieldVUE can automate your SBOMs, map vulnerabilities, and ensure enterprise-grade compliance.
             </p>
             
-            <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 w-full sm:w-auto">
-              <Button size="lg" className="w-full sm:w-auto h-12 px-8 rounded-md text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-md transition-all">
-                Schedule Demo
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Button size="lg" className="h-11 px-6 rounded-md text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg">
+                <Link href="/book-demo">
+                  Book Demo
+                </Link>
               </Button>
               <Button size="lg" variant="outline" className="w-full sm:w-auto h-12 px-8 rounded-md text-sm font-medium border border-slate-300 text-slate-700 bg-white/80 hover:bg-white hover:text-slate-900 flex items-center justify-center gap-2 shadow-sm transition-all">
                 Contact Sales

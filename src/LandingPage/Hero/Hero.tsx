@@ -3,12 +3,13 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/Common/UI/Button/Button";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Hero() {
   const containerRef = useRef<HTMLElement>(null);
-  
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"],
@@ -43,7 +44,7 @@ export default function Hero() {
     <section ref={containerRef} className="relative bg-white pt-32 pb-24 md:pb-48 lg:pt-48 lg:pb-64 min-h-[100vh] flex flex-col justify-center">
       {/* Light Enterprise Background Image with Parallax */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <motion.div 
+        <motion.div
           className="absolute inset-0 z-0 opacity-100 origin-top"
           style={{ y: yBg, scale: 1.1 }}
         >
@@ -63,14 +64,15 @@ export default function Hero() {
       <div className="shield-container relative z-10 w-full">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           {/* Left Content */}
-          <motion.div 
+          <motion.div
             className="max-w-2xl"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
-               
-            <motion.h1 variants={itemVariants} className="text-4xl sm:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk'] whitespace-nowrap">
+            {/* Eyebrow */}
+
+            <motion.h1 variants={itemVariants} className="text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk'] whitespace-nowrap">
               Know Your Software <br />
               <span className="text-primary font-medium">Supply Chain.</span>
             </motion.h1>
@@ -81,8 +83,14 @@ export default function Hero() {
             </motion.p>
 
             <motion.div variants={itemVariants} className="mt-10 flex flex-wrap gap-4">
-              <Button size="lg" className="h-11 px-6 rounded-md text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 border-0">
-                Book Demo
+              <Button
+                asChild
+                size="lg"
+                className="h-11 px-6 rounded-md text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 border-0"
+              >
+                <Link href="/book-demo">
+                  Book Demo
+                </Link>
               </Button>
 
               <Button size="lg" variant="outline" className="h-11 px-6 rounded-md text-sm font-medium border border-slate-200 text-slate-800 bg-white/50 backdrop-blur-md hover:bg-white/80 flex items-center gap-2 shadow-sm">
@@ -93,7 +101,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Right Product Preview with Parallax */}
-          <motion.div 
+          <motion.div
             className="relative mx-auto w-full max-w-lg lg:max-w-none"
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -105,8 +113,8 @@ export default function Hero() {
       </div>
 
       {/* 3 Overlapping Glassmorphic Cards with Parallax */}
-      <motion.div 
-        className="relative mt-16 md:absolute md:left-0 md:right-0 md:-bottom-36 z-20 mx-auto w-full px-4 sm:px-6 lg:px-8 shield-container"
+      <motion.div
+        className="absolute left-0 right-0 -bottom-36 z-20 mx-auto w-full px-4 sm:px-6 lg:px-8 shield-container"
         style={{ y: yCards }}
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 pb-8 md:pb-0">
