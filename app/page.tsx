@@ -2,7 +2,6 @@ import Navbar from "@/Common/NavBar/NavBar";
 import Footer from "@/Common/Footer/Footer";
 
 import Hero from "@/LandingPage/Hero/Hero";
-import TrustCompliance from "@/LandingPage/TrustCompliance/TrustCompliance";
 import TheProblem from "@/LandingPage/TheProblem/TheProblem";
 import Solutions from "@/LandingPage/Solutions/Solutions";
 import PlatformCapabilities from "@/LandingPage/PlatformCapabilities/PlatformCapabilities";
@@ -21,7 +20,6 @@ export default function Home() {
 
       <main className="bg-brand-bg text-brand-body">
         <Hero />
-        <TrustCompliance />
         <TheProblem />
         <Solutions />
         <PlatformCapabilities />
