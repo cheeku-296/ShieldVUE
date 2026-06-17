@@ -1,14 +1,14 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import Navbar from "@/Common/NavBar/NavBar";
+import Footer from "@/Common/Footer/Footer";
 
-import Hero from "@/components/home/Hero";
-import ProblemStatement from "@/components/home/ProblemStatement";
-import LogoMarquee from "@/components/home/LogoMarquee";
-import MeetShieldVue from "@/components/home/MeetShieldVue";
-import ProductDeepDive from "@/components/home/ProductDeepDive";
-import BusinessImpact from "@/components/home/BusinessImpact";
-import Testimonials from "@/components/home/Testimonials";
-import CTA from "@/components/home/CTA";
+import Hero from "@/LandingPage/HeroSection/HeroSection";
+import ProblemStatement from "@/LandingPage/ProblemStatement/ProblemStatement";
+import LogoMarquee from "@/LandingPage/LogoMarquee/LogoMarquee";
+import MeetShieldVue from "@/LandingPage/MeetShieldVue/MeetShieldVue";
+import ProductDeepDive from "@/LandingPage/ProductDeepDive/ProductDeepDive";
+import BusinessImpact from "@/LandingPage/BusinessImpact/BusinessImpact";
+import Testimonials from "@/LandingPage/Testimonials/Testimonials";
+import CTA from "@/LandingPage/CTA/CTA";
 
 export default function Home() {
   return (

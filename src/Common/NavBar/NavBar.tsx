@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
-import { navigation } from "@/lib/navigation";
-import { Button } from "@/components/ui/button";
+import { navigation } from "./NavBarData";
+import { Button } from "@/Common/UI/Button/Button";
 
 export default function Navbar() {
   return (
