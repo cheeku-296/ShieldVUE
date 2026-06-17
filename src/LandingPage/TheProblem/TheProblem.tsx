@@ -44,12 +44,12 @@ export default function TheProblem() {
     visible: { 
       opacity: 1, 
       y: 0,
-      transition: { type: "spring", stiffness: 300, damping: 24 }
+      transition: { type: "spring" as const, stiffness: 300, damping: 24 }
     }
   };
 
   return (
-    <section className="bg-white py-24 md:py-32 relative">
+    <section className="bg-white pt-40 pb-24 lg:pt-56 lg:pb-32 relative">
       <div className="shield-container relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
