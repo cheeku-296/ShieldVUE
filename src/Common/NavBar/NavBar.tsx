@@ -36,7 +36,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-1">
           <Image 
-            src="/brand-logo/brand-logo.png" 
+            src="/brand-logo/new-logo.png" 
             alt="ShieldVUE Logo Icon" 
             width={60} 
             height={60} 
