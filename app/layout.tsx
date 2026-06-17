@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${sora.variable} ${ibmPlexSans.variable} ${manrope.variable} h-full antialiased font-inter overflow-x-hidden`}
+      className={`${inter.variable} ${sora.variable} ${ibmPlexSans.variable} ${manrope.variable} h-full antialiased font-inter overflow-x-clip`}
       suppressHydrationWarning
     >
       <head>
@@ -45,7 +45,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full flex flex-col overflow-x-hidden" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col overflow-x-clip" suppressHydrationWarning>
         <script
           dangerouslySetInnerHTML={{
             __html: `

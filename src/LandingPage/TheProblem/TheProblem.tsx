@@ -12,20 +12,20 @@ export default function TheProblem() {
       description: "Organizations lack a clear, centralized inventory of the software components, libraries, and frameworks powering their applications."
     },
     {
-      icon: <ShieldAlert className="w-7 h-7 text-red-500" />,
-      bgClass: "bg-red-50",
+      icon: <ShieldAlert className="w-7 h-7 text-primary" />,
+      bgClass: "bg-primary/10",
       title: "Open Source Security Risks",
       description: "Unpatched vulnerabilities in open-source dependencies introduce critical attack vectors that remain undetected until exploitation."
     },
     {
-      icon: <FileSearch className="w-7 h-7 text-amber-500" />,
-      bgClass: "bg-amber-50",
+      icon: <FileSearch className="w-7 h-7 text-primary" />,
+      bgClass: "bg-primary/10",
       title: "Manual Tracking Challenges",
       description: "Relying on spreadsheets and manual audits to track software bills of materials (SBOMs) is slow, error-prone, and unscalable."
     },
     {
-      icon: <Scale className="w-7 h-7 text-indigo-500" />,
-      bgClass: "bg-indigo-50",
+      icon: <Scale className="w-7 h-7 text-primary" />,
+      bgClass: "bg-primary/10",
       title: "Growing Compliance Requirements",
       description: "Regulatory frameworks and enterprise policies increasingly mandate strict software supply chain documentation and risk governance."
     }
@@ -54,21 +54,21 @@ export default function TheProblem() {
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           {/* Left Column: Sticky Header */}
-          <motion.div 
-            className="lg:col-span-5 lg:sticky lg:top-32"
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-4xl md:text-5xl font-medium text-slate-900 tracking-[-0.46px] leading-[1.1] font-['Clash_Grotesk']">
-              The Software <br className="hidden lg:block" /> Supply Chain <br className="hidden lg:block" /> <span className="text-primary">Blindspot.</span>
-            </h2>
-            <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-lg">
-              Modern applications are built on thousands of dependencies. Without proper governance, this complexity introduces severe operational and security risks that can compromise your entire infrastructure.
-            </p>
-           
-          </motion.div>
+          <div className="lg:col-span-5 lg:sticky lg:top-32 self-start">
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-4xl md:text-5xl font-medium text-slate-900 tracking-[-0.46px] leading-[1.1] font-['Clash_Grotesk']">
+                The Software <br className="hidden lg:block" /> Supply Chain <br className="hidden lg:block" /> <span className="text-primary">Blindspot.</span>
+              </h2>
+              <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-lg">
+                Modern applications are built on thousands of dependencies. Without proper governance, this complexity introduces severe operational and security risks that can compromise your entire infrastructure.
+              </p>
+            </motion.div>
+          </div>
 
           {/* Right Column: Stacked Problem Cards */}
           <motion.div 
