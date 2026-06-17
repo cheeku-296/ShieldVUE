@@ -70,8 +70,8 @@ export default function Hero() {
             animate="visible"
           >
                
-            <motion.h1 variants={itemVariants} className="text-5xl sm:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk']">
-              Know Your Software <br className="hidden sm:block" />
+            <motion.h1 variants={itemVariants} className="text-4xl sm:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk'] whitespace-nowrap">
+              Know Your Software <br />
               <span className="text-primary font-medium">Supply Chain.</span>
             </motion.h1>
 
