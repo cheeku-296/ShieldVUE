@@ -119,26 +119,26 @@ export default function Hero() {
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 pb-8 md:pb-0">
           {/* Card 1: Primary Color */}
-          <div className="flex flex-col justify-between items-start bg-primary/70 backdrop-blur-2xl border border-white/20 rounded-lg p-8 min-h-[220px] shadow-[0_8px_32px_rgba(0,0,0,0.15)] text-white transform transition-all duration-300 md:hover:-translate-y-2 hover:bg-primary/80">
+          <div className="flex flex-col justify-between items-start bg-gradient-to-br from-primary/60 to-primary/40 backdrop-blur-3xl border border-white/20 rounded-lg p-8 min-h-[220px] shadow-[0_8px_32px_rgba(0,0,0,0.15)] text-white transform transition-all duration-300 md:hover:-translate-y-2">
             <div>
-              <h3 className="text-xl font-medium mb-2">Comprehensive Visibility</h3>
-              <p className="text-sm leading-relaxed text-white/90">Monitor your entire software supply chain in real-time.</p>
+              <h3 className="text-xl font-medium mb-2">Automated SBOM Generation</h3>
+              <p className="text-sm leading-relaxed text-white/90">Automatically generate standardized SBOMs directly from source code and CI/CD pipelines.</p>
             </div>
             <a href="#" className="text-sm font-medium mt-4 hover:underline flex items-center gap-1">Learn More <ArrowRight className="h-4 w-4" /></a>
           </div>
           {/* Card 2: White Color */}
           <div className="flex flex-col justify-between items-start bg-white/50 backdrop-blur-2xl border border-white/60 rounded-lg p-8 min-h-[220px] shadow-[0_8px_32px_rgba(0,0,0,0.1)] text-slate-800 transform transition-all duration-300 md:hover:-translate-y-2 hover:bg-white/60">
             <div>
-              <h3 className="text-xl font-medium mb-2">Vulnerability Management</h3>
-              <p className="text-sm leading-relaxed text-slate-700">Identify and remediate risks before they impact operations.</p>
+              <h3 className="text-xl font-medium mb-2">Continuous Vulnerability Mapping</h3>
+              <p className="text-sm leading-relaxed text-slate-700">Correlate components against global vulnerability databases to highlight active risks in real-time.</p>
             </div>
-            <a href="#" className="text-sm font-medium mt-4 text-primary hover:underline flex items-center gap-1">View Services <ArrowRight className="h-4 w-4" /></a>
+            <a href="#" className="text-sm font-medium mt-4 text-primary hover:underline flex items-center gap-1">View Features <ArrowRight className="h-4 w-4" /></a>
           </div>
           {/* Card 3: White Color */}
           <div className="flex flex-col justify-between items-start bg-white/50 backdrop-blur-2xl border border-white/60 rounded-lg p-8 min-h-[220px] shadow-[0_8px_32px_rgba(0,0,0,0.1)] text-slate-800 transform transition-all duration-300 md:hover:-translate-y-2 hover:bg-white/60">
             <div>
-              <h3 className="text-xl font-medium mb-2">Automated Compliance</h3>
-              <p className="text-sm leading-relaxed text-slate-700">Ensure adherence to industry standards effortlessly.</p>
+              <h3 className="text-xl font-medium mb-2">Compliance Ready</h3>
+              <p className="text-sm leading-relaxed text-slate-700">Meet regulatory requirements instantly with audit-ready reporting and strict governance.</p>
             </div>
             <a href="#" className="text-sm font-semibold mt-4 text-primary hover:underline flex items-center gap-1">Discover Options <ArrowRight className="h-4 w-4" /></a>
           </div>

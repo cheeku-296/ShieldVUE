@@ -40,15 +40,15 @@ export default function SbomCbom() {
                   Software Bill of Materials (SBOM)
                 </h3>
                 <p className="text-slate-700 font-light mb-6 leading-relaxed text-base">
-                  A comprehensive inventory of all open-source and third-party software components, libraries, and frameworks that make up your application.
+                  A structured, machine-readable inventory of all software components, dependencies, licenses, and metadata used in an application.
                 </p>
 
                 <ul className="space-y-3.5">
                   {[
-                    "Dependency Trees & Nested Graphs",
-                    "Open Source License Tracking",
-                    "Automated Vulnerability (CVE) Mapping",
-                    "Component Version Drift Analysis"
+                    "Complete Component Inventory",
+                    "Deep Dependency Visibility",
+                    "License Transparency",
+                    "Faster Incident Response"
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3 text-slate-800 font-normal text-sm">
                       <div className="w-5 h-5 rounded-full bg-white shadow-sm border border-slate-100 flex items-center justify-center flex-shrink-0">
@@ -78,15 +78,15 @@ export default function SbomCbom() {
                   Cryptography Bill of Materials (CBOM)
                 </h3>
                 <p className="text-white/80 font-light mb-6 leading-relaxed text-base">
-                  A specialized inventory of all cryptographic assets, algorithms, and certificates used across your codebase to identify quantum vulnerabilities.
+                  Discover, analyze, and manage cryptographic assets across applications to identify and remediate quantum vulnerabilities.
                 </p>
 
                 <ul className="space-y-3.5">
                   {[
-                    "Algorithm Discovery (RSA, AES, SHA)",
-                    "Key Length & Cipher Suite Validation",
-                    "Hardcoded Secret Detection",
-                    "Post-Quantum Cryptography Readiness"
+                    "Cryptographic Asset Discovery (Keys & Certs)",
+                    "Weak Algorithm & Deprecated Encryption Alerts",
+                    "Line-Level Source File Mapping",
+                    "Cryptographic Dependency Mapping"
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3 text-white font-normal text-sm">
                       <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 backdrop-blur-sm border border-white/10">

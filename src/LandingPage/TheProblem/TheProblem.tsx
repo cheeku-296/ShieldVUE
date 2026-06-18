@@ -1,6 +1,6 @@
 "use client";
 
-import { EyeOff, ShieldAlert, FileSearch, Scale } from "lucide-react";
+import { EyeOff, ShieldAlert, FileSearch, Scale, Clock, Gavel } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function TheProblem() {
@@ -8,26 +8,26 @@ export default function TheProblem() {
     {
       icon: <EyeOff className="w-7 h-7 text-primary" />,
       bgClass: "bg-primary/10",
-      title: "Limited Software Visibility",
-      description: "Organizations lack a clear, centralized inventory of the software components, libraries, and frameworks powering their applications."
+      title: "Limited Supply Chain Visibility",
+      description: "Organizations often lack visibility into components used across applications, creating significant blind spots."
     },
     {
       icon: <ShieldAlert className="w-7 h-7 text-primary" />,
       bgClass: "bg-primary/10",
-      title: "Open Source Security Risks",
-      description: "Unpatched vulnerabilities in open-source dependencies introduce critical attack vectors that remain undetected until exploitation."
+      title: "Rising Open Source Vulnerabilities",
+      description: "New CVEs emerge daily in third-party libraries, exponentially increasing attack surfaces."
+    },
+    {
+      icon: <Scale className="w-7 h-7 text-primary" />,
+      bgClass: "bg-primary/10",
+      title: "Compliance Complexity",
+      description: "Meeting regulatory mandates and rigorous customer security requirements is becoming increasingly difficult."
     },
     {
       icon: <FileSearch className="w-7 h-7 text-primary" />,
       bgClass: "bg-primary/10",
       title: "Manual Tracking Challenges",
-      description: "Relying on spreadsheets and manual audits to track software bills of materials (SBOMs) is slow, error-prone, and unscalable."
-    },
-    {
-      icon: <Scale className="w-7 h-7 text-primary" />,
-      bgClass: "bg-primary/10",
-      title: "Growing Compliance Requirements",
-      description: "Regulatory frameworks and enterprise policies increasingly mandate strict software supply chain documentation and risk governance."
+      description: "Spreadsheet-based component tracking is highly inaccurate, error-prone, and not scalable."
     }
   ];
 
@@ -62,10 +62,10 @@ export default function TheProblem() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-4xl md:text-5xl font-medium text-slate-900 tracking-[-0.46px] leading-[1.1] font-['Clash_Grotesk']">
-                The Software <br className="hidden lg:block" /> Supply Chain <br className="hidden lg:block" /> <span className="text-primary">Blindspot.</span>
+                Why Organizations <br className="hidden lg:block" /> Need <br className="hidden lg:block" /> <span className="text-primary">ShieldVUE.</span>
               </h2>
               <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-lg">
-                Modern applications are built on thousands of dependencies. Without proper governance, this complexity introduces severe operational and security risks that can compromise your entire infrastructure.
+                Modern applications rely heavily on open-source and third-party software components, creating complex security, compliance, and visibility challenges.
               </p>
             </motion.div>
           </div>

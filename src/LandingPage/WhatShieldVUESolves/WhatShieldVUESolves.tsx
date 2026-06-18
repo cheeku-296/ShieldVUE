@@ -11,155 +11,155 @@ export default function WhatShieldVUESolves() {
   const tabs = useMemo(() => [
     {
       id: 0,
-      name: "AI Scanning",
+      name: "SBOM Management",
       content: {
-        title: "SECURITY SCANNING",
-        description: "Securing your source code and dependencies from the latest threats. Built for Zero Trust and powered by advanced AI, the ShieldVUE platform proactively monitors, analyzes, and prevents sophisticated vulnerabilities in real time, enabling secure growth for your engineering teams.",
-        metric1: "95%",
-        metric1Label: "FASTER REMEDIATION",
+        title: "SBOM MANAGEMENT",
+        description: "Gain complete transparency into your software supply chain. Automatically generate standardized SBOMs from source code, containers, and pipelines. Capture versions, licenses, and metadata in standard formats at machine speed.",
+        metric1: "100%",
+        metric1Label: "COMPONENT INVENTORY",
         metric2: "Zero",
-        metric2Label: "FALSE POSITIVES",
-        cta: "Explore Scanning Security",
+        metric2Label: "BLIND SPOTS",
+        cta: "Explore SBOM Management",
         cards: [
           {
-            title: "Gartner.",
-            description: "2025 Gartner® Magic Quadrant™ for Application Security Testing"
+            title: "Automated Generation",
+            description: "Supports source code, binaries, containers, and manifests across multi-language stacks."
           },
           {
-            title: "Forrester",
-            description: "The Forrester Wave™: Software Composition Analysis Solutions"
+            title: "Multiple Formats",
+            description: "Native support for industry standard formats including SPDX, CycloneDX, and JSON."
           },
           {
-            title: "Gartner.",
-            description: "Gartner® Peer Insights™ Customers' Choice"
+            title: "Version Tracking",
+            description: "Maintain historical SBOM tracking to ensure complete component traceability."
           },
           {
-            title: "IDC",
-            description: "IDC MarketScape: Worldwide DevSecOps Leader"
+            title: "Repository Integration",
+            description: "Secure, centralized, and versioned SBOM storage that is audit-ready for compliance."
           }
         ]
       }
     },
     {
       id: 1,
-      name: "SBOM & CBOM",
+      name: "Vulnerability Intelligence",
       content: {
-        title: "SBOM MANAGEMENT",
-        description: "Gain complete transparency into your software supply chain. Automatically generate, manage, and distribute standard-compliant SBOMs and CBOMs at machine speed without slowing down your release cycles.",
-        metric1: "100%",
-        metric1Label: "SUPPLY CHAIN VISIBILITY",
-        metric2: "10x",
-        metric2Label: "FASTER AUDITS",
-        cta: "Explore SBOM Platform",
+        title: "REAL-TIME VULNERABILITY INTELLIGENCE",
+        description: "Correlate discovered open-source components against global vulnerability databases (NVD) in real-time. Instantly pinpoint active risks and affected applications across direct and transitive dependencies when a new CVE emerges.",
+        metric1: "Real-Time",
+        metric1Label: "THREAT MONITORING",
+        metric2: "Fast",
+        metric2Label: "IMPACT ANALYSIS",
+        cta: "Explore Vulnerability Intelligence",
         cards: [
           {
-            title: "SPDX Certified",
-            description: "Fully compliant with the latest SPDX standard formats"
+            title: "CVE Mapping",
+            description: "Continuous and automated mapping of SBOM components to the latest CVEs."
           },
           {
-            title: "CycloneDX",
-            description: "Native support for advanced CycloneDX component graphs"
+            title: "Risk Prioritization",
+            description: "Intelligent risk scoring and impact analysis to focus on the most critical threats."
           },
           {
-            title: "Gartner.",
-            description: "Recognized in Hype Cycle for Supply Chain Security"
+            title: "Deep Dependency Scans",
+            description: "Comprehensive coverage of both direct and deeply nested transitive dependencies."
           },
           {
-            title: "CISA",
-            description: "Aligned with CISA standard requirements for SBOMs"
+            title: "Continuous Monitoring",
+            description: "Always-on real-time visibility into your security exposure and attack surface."
           }
         ]
       }
     },
     {
       id: 2,
-      name: "Risk Mapping",
+      name: "Inventory Management",
       content: {
-        title: "REAL-TIME VULNERABILITY MAPPING",
-        description: "Correlate discovered open-source components against global vulnerability databases (NVD) in real-time. Instantly pinpoint active risks and affected applications when a new zero-day emerges.",
-        metric1: "< 1h",
-        metric1Label: "ZERO-DAY ASSESSMENT",
-        metric2: "24/7",
-        metric2Label: "THREAT MONITORING",
-        cta: "Explore Vulnerability Mapping",
+        title: "GLOBAL INVENTORY MANAGEMENT",
+        description: "Maintain a centralized inventory of all applications and components. Gain global visibility across all teams and environments to monitor open-source usage, enforce license compliance, and detect orphaned components.",
+        metric1: "Global",
+        metric1Label: "VISIBILITY",
+        metric2: "100%",
+        metric2Label: "ASSET TRACKING",
+        cta: "Explore Inventory Management",
         cards: [
           {
-            title: "Gartner.",
-            description: "2025 Gartner® Magic Quadrant™ for Risk Management"
+            title: "Application Inventory",
+            description: "Centralized tracking and visualization of all enterprise applications and services."
           },
           {
-            title: "Forrester",
-            description: "The Forrester Wave™: Vulnerability Risk Management"
+            title: "Component Tracking",
+            description: "Detailed inventory of open-source libraries, frameworks, and third-party code."
           },
           {
-            title: "Gartner.",
-            description: "Cool Vendor in Supply Chain Security"
+            title: "Environment Visibility",
+            description: "Track component deployments across Dev, QA, and Production environments."
           },
           {
-            title: "Frost & Sullivan",
-            description: "Technology Innovation Leadership Award"
+            title: "Historical Audits",
+            description: "Detect unused and orphaned components over time to reduce technical debt."
           }
         ]
       }
     },
     {
       id: 3,
-      name: "CI/CD Governance",
+      name: "Version Comparison",
       content: {
-        title: "ZERO-TRUST CI/CD GOVERNANCE",
-        description: "Enforce strict policy controls directly inside your build pipelines. Block non-compliant, outdated, or explicitly risky packages from ever entering your secure development lifecycle.",
-        metric1: "100%",
-        metric1Label: "PIPELINE COVERAGE",
-        metric2: "Zero",
-        metric2Label: "UNAUTHORIZED DEPLOYS",
-        cta: "Explore CI/CD Governance",
+        title: "VERSION COMPARISON & DRIFT",
+        description: "Compare software versions and vulnerabilities across projects. Track component additions, removals, and upgrades to ensure full software composition traceability and secure release governance.",
+        metric1: "Track",
+        metric1Label: "COMPONENT DRIFT",
+        metric2: "Secure",
+        metric2Label: "RELEASE GOVERNANCE",
+        cta: "Explore Version Comparison",
         cards: [
           {
-            title: "Gartner.",
-            description: "2025 Gartner® Magic Quadrant™ for CI/CD Security"
+            title: "Compare Releases",
+            description: "SBOM versioning comparisons across continuous builds and production releases."
           },
           {
-            title: "Forrester",
-            description: "The Forrester Wave™: Continuous Delivery and Release Automation"
+            title: "Component Changes",
+            description: "Instantly track dependency additions, removals, and critical upgrades."
           },
           {
-            title: "Gartner.",
-            description: "Gartner® Magic Quadrant™ for DevOps Platforms"
+            title: "Vulnerability Diffs",
+            description: "Compare the security posture and CVE differences between two software versions."
           },
           {
-            title: "IDC",
-            description: "IDC MarketScape: DevSecOps Portfolio"
+            title: "Release Governance",
+            description: "Automated governance with shift-left security to prevent risky deployments."
           }
         ]
       }
     },
     {
       id: 4,
-      name: "Compliance",
+      name: "Access & Configuration",
       content: {
-        title: "ENTERPRISE COMPLIANCE AUTOMATION",
-        description: "Deliver secure-by-design software that inherently meets stringent regulatory frameworks. Automate evidence gathering and ensure you remain compliant with SSDF, SOC2, and ISO standards by default.",
-        metric1: "SSDF",
-        metric1Label: "COMPLIANT BY DEFAULT",
-        metric2: "ISO",
-        metric2Label: "27001 READY",
-        cta: "Explore Compliance",
+        title: "ACCESS & CONFIGURATION MANAGEMENT",
+        description: "Enforce strict security controls with Role-Based Access Control (RBAC) and centralized agent visibility. Maintain comprehensive audit logs to ensure your DevSecOps pipeline remains secure and compliant.",
+        metric1: "RBAC",
+        metric1Label: "STRICT CONTROLS",
+        metric2: "Audit",
+        metric2Label: "COMPLIANCE READY",
+        cta: "Explore Access Management",
         cards: [
           {
-            title: "Gartner.",
-            description: "2025 Gartner® Magic Quadrant™ for IT Vendor Risk Management"
+            title: "User Management",
+            description: "Granular Role-Based Access Control (RBAC) tailored for enterprise DevSecOps teams."
           },
           {
-            title: "Forrester",
-            description: "The Forrester Wave™: Governance, Risk, And Compliance"
+            title: "Agent Management",
+            description: "Centralized visibility and lifecycle control over all distributed scanning agents."
           },
           {
-            title: "Gartner.",
-            description: "Gartner® Magic Quadrant™ for IT Risk Management"
+            title: "Audit Logs",
+            description: "Comprehensive tracking of system changes, policy updates, and user actions."
           },
           {
-            title: "KuppingerCole",
-            description: "Leadership Compass for Policy Based Access Control"
+            title: "Security Controls",
+            description: "Enforce strict compliance standards and organizational security policies globally."
           }
         ]
       }
@@ -268,8 +268,8 @@ export default function WhatShieldVUESolves() {
                     <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-[60px] group-hover:bg-primary/30 transition-all duration-500 pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
 
                     <div className="relative z-10">
-                      <h4 className="text-2xl font-semibold text-slate-800 mb-2 font-['Manrope']">{card.title}</h4>
-                      <p className="text-sm text-slate-600 leading-relaxed font-medium">{card.description}</p>
+                      <h4 className="text-xl font-normal text-slate-40 mb-2 font-['Manrope']">{card.title}</h4>
+                      <p className="text-sm text-slate-600 leading-relaxed font-normal">{card.description}</p>
                     </div>
                   </div>
                 ))}

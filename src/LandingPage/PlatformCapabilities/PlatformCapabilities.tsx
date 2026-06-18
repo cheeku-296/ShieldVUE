@@ -5,32 +5,32 @@ export default function PlatformCapabilities() {
     {
       icon: <FileCode2 className="w-6 h-6" />,
       title: "SBOM Generation",
-      description: "Automatically extract and generate standardized Software Bills of Materials (SPDX, CycloneDX) during CI/CD build pipelines."
+      description: "Automatically generate standardized SBOMs from Source Code, Containers, Binaries, Packages, and CI/CD Pipelines."
     },
     {
       icon: <Database className="w-6 h-6" />,
       title: "SBOM Repository",
-      description: "Store, version, and manage all your SBOMs in a centralized, searchable, and highly secure enterprise repository."
+      description: "Centralized Storage, Version Management, Searchable Repository, and Audit Ready Records."
     },
     {
       icon: <Radar className="w-6 h-6" />,
       title: "Vulnerability Mapping",
-      description: "Correlate discovered components against global vulnerability databases (NVD) to highlight active risks in real-time."
-    },
-    {
-      icon: <ArrowLeftRight className="w-6 h-6" />,
-      title: "Version Comparison",
-      description: "Compare different software versions to track component drift, identify introduced risks, and ensure stable releases."
-    },
-    {
-      icon: <FileText className="w-6 h-6" />,
-      title: "Reporting & Audit",
-      description: "Generate executive-ready reports and compliance documentation for internal audits and external regulatory requests."
+      description: "CVE Mapping, Real-Time Threat Intelligence, Risk Prioritization, and Dependency Tracking."
     },
     {
       icon: <Boxes className="w-6 h-6" />,
       title: "Inventory Management",
-      description: "Gain global visibility across all applications, teams, and environments to monitor open-source usage and license compliance."
+      description: "Application Inventory, Component Inventory, Environment Tracking, and comprehensive Asset Visibility."
+    },
+    {
+      icon: <ArrowLeftRight className="w-6 h-6" />,
+      title: "Governance & Policy",
+      description: "License Compliance, Security Policy Enforcement, Build Gate Controls, and Risk Governance."
+    },
+    {
+      icon: <FileText className="w-6 h-6" />,
+      title: "Reporting & Analytics",
+      description: "Executive Dashboards, Compliance Reports, Risk Reports, and Audit Reports."
     }
   ];
 
@@ -39,10 +39,10 @@ export default function PlatformCapabilities() {
       <div className="shield-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-4">
-            Platform Capabilities
+            ShieldVUE Platform
           </h2>
           <p className="text-lg text-slate-600">
-            A comprehensive suite of tools built to secure, govern, and audit your entire software supply chain lifecycle.
+            An integrated platform for software composition analysis, vulnerability intelligence, compliance governance, and cryptographic asset management.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function PlatformCapabilities() {
                 <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors duration-300">
                   {cap.title}
                 </h3>
-                <p className="text-slate-600 leading-relaxed font-medium text-[15px]">
+                <p className="text-slate-600 leading-relaxed font-small text-[15px]">
                   {cap.description}
                 </p>
               </div>
