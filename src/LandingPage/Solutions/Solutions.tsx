@@ -73,7 +73,7 @@ export default function Solutions() {
 
           {/* Right: Capabilities */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-6">
               What ShieldVUE Solves
             </h2>
             <p className="text-lg text-slate-600 mb-10">

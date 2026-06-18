@@ -20,7 +20,7 @@ export default function ProductScreenshots() {
     <section className="bg-slate-50 py-24 border-y border-slate-100 overflow-hidden">
       <div className="shield-container">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-4">
             Total Visibility at Your Fingertips
           </h2>
           <p className="text-lg text-slate-600">

@@ -6,7 +6,6 @@ import TheProblem from "@/LandingPage/TheProblem/TheProblem";
 import Solutions from "@/LandingPage/Solutions/Solutions";
 import PlatformCapabilities from "@/LandingPage/PlatformCapabilities/PlatformCapabilities";
 import ProductScreenshots from "@/LandingPage/ProductScreenshots/ProductScreenshots";
-import HowItWorks from "@/LandingPage/HowItWorks/HowItWorks";
 import ProcessFlow from "@/LandingPage/ProcessFlow/ProcessFlow";
 import SbomCbom from "@/LandingPage/SbomCbom/SbomCbom";
 import BusinessOutcomes from "@/LandingPage/BusinessOutcomes/BusinessOutcomes";
@@ -21,12 +20,11 @@ export default function Home() {
       <main className="bg-brand-bg text-brand-body">
         <Hero />
         <TheProblem />
-        <Solutions />
-        <PlatformCapabilities />
         <ProductScreenshots />
-        <HowItWorks />
         <ProcessFlow />
+        <PlatformCapabilities />
         <SbomCbom />
+        <Solutions />
         <BusinessOutcomes />
         <Industries />
         <EnterpriseCTA />

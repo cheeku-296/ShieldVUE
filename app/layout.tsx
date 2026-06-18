@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${sora.variable} ${ibmPlexSans.variable} ${manrope.variable} h-full antialiased font-inter overflow-x-clip`}
+      className={`${inter.variable} ${sora.variable} ${ibmPlexSans.variable} ${manrope.variable} h-full antialiased font-['Clash_Grotesk'] overflow-x-clip`}
       suppressHydrationWarning
     >
       <head>
@@ -45,20 +45,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full flex flex-col overflow-x-clip" suppressHydrationWarning>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                var currentFont = localStorage.getItem('shieldvue-font');
-                if (currentFont) {
-                  document.documentElement.classList.remove('font-inter');
-                  document.documentElement.classList.add(currentFont);
-                }
-              } catch (e) {}
-            `,
-          }}
-        />
+      <body className="min-h-full flex flex-col overflow-x-clip font-light" suppressHydrationWarning>
         {children}
       </body>
     </html>
