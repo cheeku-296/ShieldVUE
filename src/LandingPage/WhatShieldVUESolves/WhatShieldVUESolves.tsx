@@ -237,7 +237,7 @@ export default function WhatShieldVUESolves() {
                   {activeData.description}
                 </p>
                 
-                <div className="flex gap-16 mb-12">
+                <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 mb-12">
                    <div>
                      <div className="text-4xl font-bold text-slate-900 mb-2">{activeData.metric1}</div>
                      <div className="text-xs font-semibold text-slate-500 uppercase tracking-[0.2em]">{activeData.metric1Label}</div>

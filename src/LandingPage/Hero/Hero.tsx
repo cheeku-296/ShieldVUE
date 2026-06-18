@@ -62,19 +62,19 @@ export default function Hero() {
       </div>
 
       <div className="shield-container relative z-10 w-full">
-        <div className="grid items-center gap-16 lg:grid-cols-2">
+        <div className="grid items-center gap-16 lg:grid-cols-12">
           {/* Left Content */}
           <motion.div
-            className="max-w-2xl"
+            className="max-w-2xl lg:max-w-none lg:col-span-7 xl:col-span-8"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
             {/* Eyebrow */}
 
-            <motion.h1 variants={itemVariants} className="text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk'] whitespace-nowrap">
-              Know Your Software <br />
-              <span className="text-primary font-medium">Supply Chain.</span>
+            <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk']">
+              <span className="md:whitespace-nowrap">Know Your Software</span> <br />
+              <span className="text-primary font-medium md:whitespace-nowrap">Supply Chain.</span>
             </motion.h1>
 
             <motion.p variants={itemVariants} className="mt-6 text-lg sm:text-xl leading-8 text-slate-600">
@@ -114,7 +114,7 @@ export default function Hero() {
 
       {/* 3 Overlapping Glassmorphic Cards with Parallax */}
       <motion.div
-        className="absolute left-0 right-0 -bottom-36 z-20 mx-auto w-full px-4 sm:px-6 lg:px-8 shield-container"
+        className="relative mt-16 md:absolute md:left-0 md:right-0 md:-bottom-24 lg:-bottom-36 z-20 mx-auto w-full px-4 sm:px-6 lg:px-8 shield-container"
         style={{ y: yCards }}
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 pb-8 md:pb-0">
