@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   Calendar,
@@ -7,12 +8,82 @@ import {
   Clock3,
   Users,
   ArrowRight,
+  CheckCircle,
+  ChevronLeft,
+  ChevronRight,
+  ChevronDown,
 } from "lucide-react";
 import { Button } from "@/Common/UI/Button/Button";
 
 export default function DemoForm() {
+  const [currentDate, setCurrentDate] = useState(new Date());
+  const [selectedDate, setSelectedDate] = useState<number | null>(null);
+  const [selectedContact, setSelectedContact] = useState<
+    "sales" | "presales" | null
+  >(null);
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    time: "",
+  });
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const daysInMonth = new Date(
+    currentDate.getFullYear(),
+    currentDate.getMonth() + 1,
+    0,
+  ).getDate();
+  const firstDayOfMonth = new Date(
+    currentDate.getFullYear(),
+    currentDate.getMonth(),
+    1,
+  ).getDay();
+
+  const isPrevMonthDisabled =
+    (currentDate.getFullYear() === today.getFullYear() &&
+      currentDate.getMonth() <= today.getMonth()) ||
+    currentDate.getFullYear() < today.getFullYear();
+
+  const handlePrevMonth = () => {
+    setCurrentDate(
+      new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1),
+    );
+    setSelectedDate(null);
+  };
+
+  const handleNextMonth = () => {
+    setCurrentDate(
+      new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1),
+    );
+    setSelectedDate(null);
+  };
+
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
   return (
-    <section id="demo-form" className="relative overflow-hidden bg-slate-50 py-32">
+    <section
+      id="demo-form"
+      className="relative overflow-hidden bg-slate-50 py-32"
+    >
       {/* Background Pattern */}
       <div
         className="
@@ -95,7 +166,7 @@ export default function DemoForm() {
                 font-['Clash_Grotesk']
               "
             >
-              See ShieldVUE
+              See <span className="text-primary">ShieldVUE</span>
               <br />
               In Action
             </h2>
@@ -108,11 +179,12 @@ export default function DemoForm() {
                 leading-8
 
                 text-slate-600
+                lg:max-w-[85%]
               "
             >
-              Discover how leading enterprises gain complete
-              visibility into software components, vulnerabilities,
-              cryptographic assets and compliance posture.
+              Discover how leading enterprises gain complete visibility into
+              software components, vulnerabilities, cryptographic assets and
+              compliance posture.
             </p>
 
             <div className="mt-12 space-y-5">
@@ -182,237 +254,371 @@ export default function DemoForm() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="
-              relative
-              overflow-hidden
-
-              rounded-3xl
-
-              border
-              border-slate-200
-
-              bg-white
-
-              p-8
-              md:p-10
-
-              shadow-[0_30px_80px_rgba(15,23,42,0.08)]
-            "
+            className="relative bg-white p-8 md:p-12 rounded-md shadow-[0_30px_80px_rgba(15,23,42,0.08)] lg:w-[115%] lg:-ml-[15%]"
           >
-            {/* Glow */}
-            <div
-              className="
-                absolute
-                right-0
-                top-0
-
-                h-64
-                w-64
-
-                rounded-md
-
-                bg-primary/10
-
-                blur-3xl
-              "
-            />
-
-            <div className="relative z-10">
-              <h3
-                className="
-                  text-2xl
-                  font-medium
-                  font-['Clash_Grotesk']
-
-                  text-slate-900
-                "
-              >
-                Schedule Your Demo
-              </h3>
-
-              <p className="mt-2 text-slate-500">
-                Fill out the form and our team will contact you.
-              </p>
-
-              <form className="mt-10 grid gap-5 md:grid-cols-2">
-                <input
-                  placeholder="Full Name"
-                  className="
-                    rounded-md
-                    border
-                    border-slate-200
-
-                    bg-white
-
-                    px-5
-                    py-4
-
-                    outline-none
-
-                    transition-all
-
-                    focus:border-primary
-                    focus:ring-4
-                    focus:ring-primary/10
-                  "
-                />
-
-                <input
-                  placeholder="Business Email"
-                  type="email"
-                  className="
-                    rounded-md
-                    border
-                    border-slate-200
-
-                    bg-white
-
-                    px-5
-                    py-4
-
-                    outline-none
-
-                    transition-all
-
-                    focus:border-primary
-                    focus:ring-4
-                    focus:ring-primary/10
-                  "
-                />
-
-                <input
-                  placeholder="Company Name"
-                  className="
-                    rounded-md
-                    border
-                    border-slate-200
-
-                    px-5
-                    py-4
-
-                    focus:border-primary
-                    focus:ring-4
-                    focus:ring-primary/10
-
-                    outline-none
-                  "
-                />
-
-                <input
-                  placeholder="Phone Number"
-                  className="
-                    rounded-md
-                    border
-                    border-slate-200
-
-                    px-5
-                    py-4
-
-                    focus:border-primary
-                    focus:ring-4
-                    focus:ring-primary/10
-
-                    outline-none
-                  "
-                />
-
-                <select
-                  className="
-                    rounded-md
-                    border
-                    border-slate-200
-
-                    px-5
-                    py-4
-
-                    md:col-span-2
-
-                    focus:border-primary
-                    focus:ring-4
-                    focus:ring-primary/10
-
-                    outline-none
-                  "
-                >
-                  <option>Select Area of Interest</option>
-                  <option>SBOM Management</option>
-                  <option>CBOM Discovery</option>
-                  <option>Vulnerability Intelligence</option>
-                  <option>Compliance Reporting</option>
-                  <option>Supply Chain Security</option>
-                </select>
-
-                <textarea
-                  rows={5}
-                  placeholder="Tell us about your requirements..."
-                  className="
-                    rounded-md
-                    border
-                    border-slate-200
-
-                    px-5
-                    py-4
-
-                    md:col-span-2
-
-                    resize-none
-
-                    focus:border-primary
-                    focus:ring-4
-                    focus:ring-primary/10
-
-                    outline-none
-                  "
-                />
-
-                <Button
-                  size="lg"
-                  className="
-                    h-14
-
-                    md:col-span-2
-
-                    rounded-md
-
-                    bg-primary
-
-                    text-white
-
-                    hover:bg-primary/90
-                  "
-                >
-                  Schedule Demo
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </form>
-
-              {/* Trust Bar */}
+            {/* Top Contact Cards */}
+            <div className="grid md:grid-cols-2 gap-4 mb-10">
+              {/* Card 1 */}
               <div
-                className="
-                  mt-8
-
-                  flex
-                  flex-wrap
-                  gap-4
-
-                  border-t
-                  border-slate-200
-
-                  pt-6
-
-                  text-sm
-                  text-slate-500
-                "
+                onClick={() =>
+                  setSelectedContact(
+                    selectedContact === "sales" ? null : "sales",
+                  )
+                }
+                className={`cursor-pointer transition-all border rounded-md p-6 relative ${selectedContact === "sales" ? "border-primary bg-primary/5" : "border-slate-200 bg-white hover:border-primary/30"}`}
               >
+                <div className="flex justify-between items-start mb-4">
+                  <h4 className="font-bold text-slate-900">Contact Sales</h4>
+                  <div
+                    className={`w-5 h-5 rounded-md flex items-center justify-center border ${selectedContact === "sales" ? "bg-primary border-primary" : "bg-white border-slate-300"}`}
+                  >
+                    {selectedContact === "sales" && (
+                      <CheckCircle className="w-3.5 h-3.5 text-white" />
+                    )}
+                  </div>
+                </div>
+                <div className="text-sm text-slate-500 mb-1">
+                  Email:{" "}
+                  <a
+                    href="mailto:sales@apmosys.com"
+                    className="text-primary font-medium"
+                  >
+                    sales@apmosys.com
+                  </a>
+                </div>
+                <div className="text-sm text-slate-500 mb-6">
+                  Phone:{" "}
+                  <span className="text-slate-900 font-medium">
+                    +91-22-4122 2250 / 2251
+                  </span>
+                </div>
+                <div className="flex gap-2">
+                  <span className="text-[10px] font-bold tracking-wide text-primary bg-primary/10 px-2 py-1 rounded">
+                    #EnterpriseLicense
+                  </span>
+                  <span className="text-[10px] font-bold tracking-wide text-primary bg-primary/10 px-2 py-1 rounded">
+                    #Quotation
+                  </span>
+                </div>
+              </div>
 
+              {/* Card 2 */}
+              <div
+                onClick={() =>
+                  setSelectedContact(
+                    selectedContact === "presales" ? null : "presales",
+                  )
+                }
+                className={`cursor-pointer transition-all border rounded-md p-6 relative ${selectedContact === "presales" ? "border-primary bg-primary/5" : "border-slate-200 bg-white hover:border-primary/30"}`}
+              >
+                <div className="flex justify-between items-start mb-4">
+                  <h4 className="font-bold text-slate-900">
+                    Contact Pre-Sales Team
+                  </h4>
+                  <div
+                    className={`w-5 h-5 rounded-md flex items-center justify-center border ${selectedContact === "presales" ? "bg-primary border-primary" : "bg-white border-slate-300"}`}
+                  >
+                    {selectedContact === "presales" && (
+                      <CheckCircle className="w-3.5 h-3.5 text-white" />
+                    )}
+                  </div>
+                </div>
+                <div className="text-sm text-slate-500 mb-[44px]">
+                  Phone:{" "}
+                  <span className="text-slate-900 font-medium">
+                    +91 89768 19122
+                  </span>
+                </div>
+                <div className="flex gap-2">
+                  <span className="text-[10px] font-bold tracking-wide text-primary bg-primary/10 px-2 py-1 rounded">
+                    #FeaturedOverview
+                  </span>
+                  <span className="text-[10px] font-bold tracking-wide text-primary bg-primary/10 px-2 py-1 rounded">
+                    #TechnicalQnA
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Form Grid */}
+            <div className="relative">
+              {!selectedContact && (
+                <div className="absolute inset-0 z-20 flex items-center justify-center backdrop-blur-[2px] rounded-md -m-4 bg-primary/10">
+                  <div className="bg-primary px-6 py-4 rounded-md shadow-xl border border-slate-100 font-semibold text-white pointer-events-auto shadow-slate-200/50">
+                    Please select a contact option above to proceed
+                  </div>
+                </div>
+              )}
+
+              <div
+                className={`grid md:grid-cols-2 gap-12 transition-all duration-300 ${!selectedContact ? "opacity-30 pointer-events-none blur-[4px] select-none" : "opacity-100"}`}
+              >
+                {/* Left Column: Calendar */}
+                <div>
+                  <div className="flex items-center gap-3 mb-8">
+                    <div className="w-8 h-8 rounded bg-primary/10 text-primary flex items-center justify-center font-bold">
+                      1
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900">
+                      Select a Date
+                    </h3>
+                  </div>
+                  {/* Calendar Mockup */}
+                  <div className="px-2">
+                    <div className="flex justify-between items-center mb-6">
+                      <button
+                        type="button"
+                        onClick={handlePrevMonth}
+                        disabled={isPrevMonthDisabled}
+                        className={
+                          isPrevMonthDisabled
+                            ? "opacity-30 cursor-not-allowed"
+                            : ""
+                        }
+                      >
+                        <ChevronLeft className="w-4 h-4 text-slate-400 hover:text-slate-900 transition-colors" />
+                      </button>
+                      <div className="font-bold text-slate-900 text-sm tracking-widest uppercase">
+                        {monthNames[currentDate.getMonth()]}{" "}
+                        {currentDate.getFullYear()}
+                      </div>
+                      <button type="button" onClick={handleNextMonth}>
+                        <ChevronRight className="w-4 h-4 text-slate-600 hover:text-slate-900 transition-colors" />
+                      </button>
+                    </div>
+                    <div className="grid grid-cols-7 text-center gap-y-4 text-sm">
+                      {/* Days Header */}
+                      {["S", "M", "T", "W", "T", "F", "S"].map((d, i) => (
+                        <div
+                          key={`${d}-${i}`}
+                          className="text-slate-400 text-xs font-bold mb-2"
+                        >
+                          {d}
+                        </div>
+                      ))}
+
+                      {/* Empty initial days */}
+                      {Array.from({ length: firstDayOfMonth }).map((_, i) => (
+                        <div key={`empty-${i}`} />
+                      ))}
+
+                      {/* Month Days */}
+                      {Array.from({ length: daysInMonth }).map((_, i) => {
+                        const day = i + 1;
+                        const isSelected = selectedDate === day;
+                        const thisDate = new Date(
+                          currentDate.getFullYear(),
+                          currentDate.getMonth(),
+                          day,
+                        );
+                        const isPast = thisDate < today;
+
+                        return (
+                          <button
+                            key={day}
+                            type="button"
+                            disabled={isPast}
+                            onClick={() => setSelectedDate(day)}
+                            className={`
+                            w-8 h-8 mx-auto rounded-md flex items-center justify-center font-medium transition-colors
+                            ${
+                              isPast
+                                ? "text-slate-300 cursor-not-allowed"
+                                : isSelected
+                                  ? "bg-primary text-white font-bold shadow-lg shadow-primary/30"
+                                  : "text-slate-600 hover:bg-slate-100"
+                            }
+                          `}
+                          >
+                            {day}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Column: Details */}
+                <div>
+                  <div className="flex items-center gap-3 mb-8">
+                    <div className="w-8 h-8 rounded bg-primary/10 text-primary flex items-center justify-center font-bold">
+                      2
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900">
+                      Your Details
+                    </h3>
+                  </div>
+
+                  {isSubmitted ? (
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      className="flex flex-col items-center justify-center text-center p-8 bg-[#FAFAFA] border border-slate-100 rounded-md h-[400px]"
+                    >
+                      <div className="w-16 h-16 bg-green-100 rounded-md flex items-center justify-center mb-4">
+                        <CheckCircle className="w-8 h-8 text-green-600" />
+                      </div>
+                      <h4 className="text-xl font-bold text-slate-900 mb-2">
+                        Booking Confirmed!
+                      </h4>
+                      <p className="text-slate-600 mb-6">
+                        Thank you,{" "}
+                        <span className="font-semibold">
+                          {formData.firstName}
+                        </span>
+                        . Your demo is scheduled for{" "}
+                        <span className="font-semibold text-slate-900">
+                          {monthNames[currentDate.getMonth()]} {selectedDate},{" "}
+                          {currentDate.getFullYear()}
+                        </span>{" "}
+                        at{" "}
+                        <span className="font-semibold text-slate-900">
+                          {formData.time}
+                        </span>
+                        .
+                      </p>
+                      <p className="text-sm text-slate-500">
+                        We've sent a calendar invitation to{" "}
+                        <span className="font-medium text-slate-700">
+                          {formData.email}
+                        </span>
+                        .
+                      </p>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setIsSubmitted(false);
+                          setSelectedDate(null);
+                          setFormData({
+                            firstName: "",
+                            lastName: "",
+                            email: "",
+                            time: "",
+                          });
+                        }}
+                        className="mt-8 text-sm font-bold text-primary hover:text-primary/80 transition-colors"
+                      >
+                        Book Another Demo
+                      </button>
+                    </motion.div>
+                  ) : (
+                    <form
+                      className="space-y-6"
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        if (!selectedDate) {
+                          alert(
+                            "Please select a date from the calendar first.",
+                          );
+                          return;
+                        }
+                        if (!formData.time) {
+                          alert("Please select a meeting time.");
+                          return;
+                        }
+                        setIsSubmitted(true);
+                      }}
+                    >
+                      <div className="grid grid-cols-2 gap-4">
+                        <div>
+                          <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">
+                            First Name
+                          </label>
+                          <input
+                            required
+                            value={formData.firstName}
+                            onChange={(e) =>
+                              setFormData({
+                                ...formData,
+                                firstName: e.target.value,
+                              })
+                            }
+                            className="w-full bg-[#FAFAFA] text-sm border border-slate-200 rounded-md px-4 py-3 outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">
+                            Last Name
+                          </label>
+                          <input
+                            required
+                            value={formData.lastName}
+                            onChange={(e) =>
+                              setFormData({
+                                ...formData,
+                                lastName: e.target.value,
+                              })
+                            }
+                            className="w-full bg-[#FAFAFA] text-sm border border-slate-200 rounded-md px-4 py-3 outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">
+                          Work Email
+                        </label>
+                        <input
+                          type="email"
+                          required
+                          value={formData.email}
+                          onChange={(e) =>
+                            setFormData({ ...formData, email: e.target.value })
+                          }
+                          className="w-full bg-[#FAFAFA] text-sm border border-slate-200 rounded-md px-4 py-3 outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">
+                          Meeting Time
+                        </label>
+                        <div className="relative">
+                          <select
+                            required
+                            value={formData.time}
+                            onChange={(e) =>
+                              setFormData({ ...formData, time: e.target.value })
+                            }
+                            className="w-full bg-[#FAFAFA] text-sm border border-slate-200 rounded-md px-4 py-3 outline-none text-slate-600 focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all appearance-none pr-10"
+                          >
+                            <option value="">Select a slot</option>
+                            <option value="10:00 AM - 10:30 AM">
+                              10:00 AM - 10:30 AM
+                            </option>
+                            <option value="11:00 AM - 11:30 AM">
+                              11:00 AM - 11:30 AM
+                            </option>
+                            <option value="01:00 PM - 01:30 PM">
+                              01:00 PM - 01:30 PM
+                            </option>
+                            <option value="03:00 PM - 03:30 PM">
+                              03:00 PM - 03:30 PM
+                            </option>
+                            <option value="04:00 PM - 04:30 PM">
+                              04:00 PM - 04:30 PM
+                            </option>
+                          </select>
+                          <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                        </div>
+                      </div>
+
+                      <button
+                        type="submit"
+                        disabled={!selectedDate || !formData.time}
+                        className="w-full mt-4 bg-primary text-white rounded-md py-4 font-bold hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                      >
+                        Confirm Booking
+                      </button>
+                    </form>
+                  )}
+                </div>
               </div>
             </div>
           </motion.div>
         </div>
       </div>
 
-{/* Bottom Separator */}
-<div className="absolute bottom-0 left-0 w-full border-b border-slate-200" />
+      {/* Bottom Separator */}
+      <div className="absolute bottom-0 left-0 w-full border-b border-slate-200" />
     </section>
   );
 }

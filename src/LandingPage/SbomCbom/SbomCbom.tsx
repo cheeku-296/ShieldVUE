@@ -6,7 +6,7 @@ export default function SbomCbom() {
     <section className="bg-slate-50 py-24 border-y border-slate-100">
       <div className="shield-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-5xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-4">
             Beyond the Standard SBOM
           </h2>
           <p className="text-lg text-slate-600">

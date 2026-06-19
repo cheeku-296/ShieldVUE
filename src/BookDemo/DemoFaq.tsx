@@ -36,7 +36,7 @@ export default function DemoFaq() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section className="relative overflow-hidden bg-white py-32">
+    <section className="relative overflow-hidden bg-white py-20">
       {/* Background Pattern */}
       <div
         className="
@@ -88,9 +88,7 @@ export default function DemoFaq() {
                 font-['Clash_Grotesk']
               "
             >
-            Frequently Asked
-            <br />
-            Questions
+            Frequently Asked <span className="text-primary">Questions</span>
           </h2>
 
           <p
@@ -109,7 +107,7 @@ export default function DemoFaq() {
         </div>
 
         {/* FAQ Accordion */}
-        <div className="mx-auto mt-20 max-w-4xl space-y-4">
+        <div className="mx-auto mt-12 max-w-4xl space-y-4">
           {faqs.map((faq, index) => {
             const isOpen = open === index;
 
@@ -133,7 +131,7 @@ export default function DemoFaq() {
                 className="
                   overflow-hidden
 
-                  rounded-2xl
+                  rounded-md
 
                   border
                   border-slate-200
@@ -159,8 +157,8 @@ export default function DemoFaq() {
                     items-center
                     justify-between
 
-                    px-8
-                    py-6
+                    px-6
+                    py-4
 
                     text-left
                   "
@@ -226,8 +224,8 @@ export default function DemoFaq() {
                           border-t
                           border-slate-100
 
-                          px-8
-                          py-6
+                          px-6
+                          py-4
                         "
                       >
                         <p

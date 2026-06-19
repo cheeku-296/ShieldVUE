@@ -60,7 +60,7 @@ export default function BusinessOutcomes() {
     >
       <div className="shield-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-5xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-4">
             Measurable Business Outcomes
           </h2>
           <p className="text-lg text-slate-600">

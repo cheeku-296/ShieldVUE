@@ -4,29 +4,29 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="relative border-t border-slate-200 bg-slate-50">
-      <div className="shield-container py-12">
-        <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
+      <div className="shield-container py-6">
+        <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           
           {/* Logo & Copyright */}
-          <div className="flex flex-col items-center gap-4 md:items-start">
+          <div className="flex flex-col items-center gap-4 md:flex-row md:gap-8">
             <Link href="/" className="flex items-center gap-1">
               <Image 
                 src="/brand-logo/new-logo.png" 
                 alt="ShieldVUE Logo Icon" 
-                width={60} 
-                height={60} 
-                className="h-12 w-auto object-contain"
+                width={64} 
+                height={64} 
+                className="h-10 w-auto object-contain"
               />
               <Image 
                 src="/brand-logo/brand-bg-text.png" 
                 alt="ShieldVUE Logo Text" 
-                width={90} 
-                height={200} 
-                className="h-16 w-auto object-contain -ml-4"
+                width={100} 
+                height={220} 
+                className="h-12 w-auto object-contain -ml-2"
               />
             </Link>
-            <p className="text-sm text-slate-500">
-              © 2026 ShieldVUE. All rights reserved.
+            <p className="text-sm font-medium text-black/500">
+              Copyright © 2026 <a href="https://ap2l.ai/" target="_blank" rel="noopener noreferrer" className="text-primary font-bold hover:opacity-80 transition-opacity">ap2l.ai</a>
             </p>
           </div>
 

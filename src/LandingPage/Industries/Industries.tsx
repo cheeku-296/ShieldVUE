@@ -6,7 +6,7 @@ export default function Industries() {
     <section className="bg-slate-50 py-32 relative overflow-hidden border-y border-slate-200">
       <div className="shield-container relative z-10">
         <div className="max-w-3xl mb-16 text-center mx-auto">
-          <h2 className="text-4xl md:text-5xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-6">
+          <h2 className="text-3xl md:text-5xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-6">
             Securing Regulated Industries
           </h2> 
           <p className="text-md md:text-lg text-slate-600 font-light leading-relaxed">
