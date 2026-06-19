@@ -221,7 +221,8 @@ export default function DemoForm() {
               <h3
                 className="
                   text-2xl
-                  font-bold
+                  font-medium
+                  font-['Clash_Grotesk']
 
                   text-slate-900
                 "

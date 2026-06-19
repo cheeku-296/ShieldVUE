@@ -78,7 +78,7 @@ export default function DemoFaq() {
                 text-4xl
                 md:text-5xl
 
-                font-semibold
+                font-medium
 
                 tracking-[-0.46px]
                 leading-[1.1]
@@ -170,7 +170,8 @@ export default function DemoFaq() {
                       pr-8
 
                       text-lg
-                      font-bold
+                      font-medium
+                      font-['Clash_Grotesk']
 
                       text-slate-900
                     "
