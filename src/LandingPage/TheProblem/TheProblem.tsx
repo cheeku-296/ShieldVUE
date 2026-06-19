@@ -62,7 +62,7 @@ export default function TheProblem() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-4xl md:text-5xl font-medium text-slate-900 tracking-[-0.46px] leading-[1.1] font-['Clash_Grotesk']">
-                Why Organizations <br className="hidden lg:block" /> Need <br className="hidden lg:block" /> <span className="text-primary">ShieldVUE.</span>
+                Why <br className="hidden lg:block" />Organizations <br className="hidden lg:block" /> Need <br className="hidden lg:block" /> <span className="text-primary">ShieldVUE.</span>
               </h2>
               <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-lg">
                 Modern applications rely heavily on open-source and third-party software components, creating complex security, compliance, and visibility challenges.
