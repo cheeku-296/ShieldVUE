@@ -17,7 +17,7 @@ export default function SbomCbom() {
         <div className="rounded-md shadow-2xl relative overflow-hidden group">
           {/* Background Image stretching across both sides */}
           <Image 
-            src="/sbom-illustration1.png" 
+            src="/landing/sbom_illustration.png" 
             alt="Software Supply Chain" 
             fill 
             className="object-cover object-center group-hover:scale-105 transition-transform duration-1000 opacity-90"

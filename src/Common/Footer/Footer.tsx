@@ -11,14 +11,14 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-4 md:flex-row md:gap-8">
             <Link href="/" className="flex items-center gap-1">
               <Image 
-                src="/brand-logo/new-logo.png" 
+                src="/brand_logo/shieldvue_logo.png" 
                 alt="ShieldVUE Logo Icon" 
                 width={64} 
                 height={64} 
                 className="h-10 w-auto object-contain"
               />
               <Image 
-                src="/brand-logo/brand-bg-text.png" 
+                src="/brand_logo/brand_bg_text.png" 
                 alt="ShieldVUE Logo Text" 
                 width={100} 
                 height={220} 

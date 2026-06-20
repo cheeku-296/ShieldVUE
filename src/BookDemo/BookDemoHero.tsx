@@ -11,7 +11,7 @@ export default function BookDemoHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/contact_us_hero.png"
+          src="/book_demo/contact_us_hero.png"
           alt=""
           fill
           priority

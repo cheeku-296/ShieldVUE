@@ -56,7 +56,7 @@ export default function BusinessOutcomes() {
   return (
     <section 
       className="bg-white py-24 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/landing/outcome-bg.png')" }}
+      style={{ backgroundImage: "url('/landing/outcome_bg.png')" }}
     >
       <div className="shield-container">
         <div className="text-center max-w-3xl mx-auto mb-16">

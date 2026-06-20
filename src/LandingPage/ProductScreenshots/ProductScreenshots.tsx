@@ -63,7 +63,7 @@ export default function ProductScreenshots() {
               {/* Image */}
               <div className="relative aspect-[16/10] w-full bg-slate-100">
                 <Image
-                  src="/images/hero_dashboard_mockup.png"
+                  src="/landing/hero_dashboard_mockup.png"
                   alt={`ShieldVUE ${activeTab} Interface`}
                   fill
                   className="object-cover object-top"

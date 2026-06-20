@@ -49,7 +49,7 @@ export default function Hero() {
           style={{ y: yBg, scale: 1.1 }}
         >
           <Image
-            src="/landing/hero2.png"
+            src="/landing/hero_bg.png"
             alt="Abstract Software Supply Chain Visualization"
             fill
             className="object-cover object-right"
