@@ -2,22 +2,16 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/Common/UI/Button/Button";
-import {
-  ArrowRight,
-  Boxes,
-  GitBranch,
-  ShieldCheck,
-  Database,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
-export default function SBOMHero() {
+export default function ComplianceHero() {
   return (
     <section className="relative overflow-hidden pt-40 pb-32">
       {/* Background Image */}
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: "url('/images/sbom-hero.png')",
+          backgroundImage: "url('/images/ChatGPT Image Jun 22, 2026, 12_58_14 PM.png')",
           backgroundSize: "cover",
           backgroundPosition: "right center",
         }}
@@ -28,6 +22,7 @@ export default function SBOMHero() {
         className="
           absolute
           inset-0
+
           bg-gradient-to-r
           from-white
           via-white/80
@@ -55,34 +50,6 @@ export default function SBOMHero() {
 
       <div className="shield-container relative z-10">
         <div className="max-w-4xl">
-          {/* Eyebrow */}
-          {/* <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="
-              inline-flex
-              items-center
-
-              rounded-full
-
-              border
-              border-primary/20
-
-              bg-primary/5
-
-              px-4
-              py-2
-
-              text-sm
-              font-medium
-
-              text-primary
-            "
-          >
-            SBOM Management
-          </motion.div> */}
-
           {/* Heading */}
           <motion.h1
             initial={{
@@ -98,9 +65,7 @@ export default function SBOMHero() {
               delay: 0.1,
             }}
             className="
-              mt-8
-
-              max-w-4xl
+              max-w-5xl
 
               text-5xl
               md:text-6xl
@@ -116,12 +81,12 @@ export default function SBOMHero() {
               font-['Clash_Grotesk']
             "
           >
-            Complete Visibility Into
+            Continuous
             <br />
 
-            Your Software
+            Compliance &
             <span className="text-primary">
-              {" "}Supply Chain
+              {" "}Governance
             </span>
           </motion.h1>
 
@@ -150,11 +115,11 @@ export default function SBOMHero() {
               text-slate-600
             "
           >
-            Automatically generate, manage, track, and govern
-            Software Bills of Materials across source code,
-            containers, binaries, packages, and CI/CD pipelines.
-            Gain complete dependency visibility and maintain
-            audit-ready software inventories at scale.
+            Enforce security policies, maintain audit readiness,
+            govern software assets, and continuously monitor
+            compliance requirements through centralized controls,
+            role-based access management, and comprehensive
+            compliance reporting.
           </motion.p>
 
           {/* CTA */}
@@ -232,83 +197,6 @@ export default function SBOMHero() {
               <ArrowRight className="h-4 w-4" />
             </Button>
           </motion.div>
-
-          {/* Metrics
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 20,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 0.6,
-              delay: 0.4,
-            }}
-            className="
-              mt-20
-
-              grid
-              gap-8
-
-              sm:grid-cols-2
-              lg:grid-cols-4
-            "
-          >
-            {[
-              {
-                icon: Boxes,
-                value: "SBOM",
-                label: "Generation",
-              },
-              {
-                icon: Database,
-                value: "100%",
-                label: "Visibility",
-              },
-              {
-                icon: GitBranch,
-                value: "Version",
-                label: "Tracking",
-              },
-              {
-                icon: ShieldCheck,
-                value: "Audit",
-                label: "Ready",
-              },
-            ].map((item) => (
-              <div key={item.label}>
-                <item.icon className="h-5 w-5 text-primary" />
-
-                <div
-                  className="
-                    mt-3
-
-                    text-3xl
-                    font-bold
-
-                    text-slate-900
-                  "
-                >
-                  {item.value}
-                </div>
-
-                <div
-                  className="
-                    mt-1
-
-                    text-sm
-
-                    text-slate-500
-                  "
-                >
-                  {item.label}
-                </div>
-              </div>
-            ))}
-          </motion.div> */}
         </div>
       </div>
     </section>

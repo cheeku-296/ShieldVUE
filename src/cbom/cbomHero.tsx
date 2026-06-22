@@ -140,26 +140,63 @@ export default function CBOMHero() {
             }}
             className="mt-10 flex flex-wrap gap-4"
           >
-            <Button size="lg">
+            <Button
+              size="lg"
+              className="
+                h-11
+                px-6
+
+                rounded-md
+
+                text-sm
+                font-semibold
+
+                bg-primary
+                hover:bg-primary/90
+
+                text-white
+
+                shadow-lg
+                shadow-primary/20
+
+                border-0
+              "
+            >
               Request Demo
-              <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
 
             <Button
-              variant="outline"
               size="lg"
+              variant="outline"
               className="
+                h-11
+                px-6
+
+                rounded-md
+
+                text-sm
+                font-medium
+
+                border
                 border-slate-200
-                bg-white/80
-                backdrop-blur-sm
 
-                text-slate-900
+                text-slate-800
 
-                hover:bg-white
-                hover:text-slate-900
+                bg-white/50
+
+                backdrop-blur-md
+
+                hover:bg-white/80
+
+                flex
+                items-center
+                gap-2
+
+                shadow-sm
               "
             >
               View Documentation
+              <ArrowRight className="h-4 w-4" />
             </Button>
           </motion.div>
         </div>

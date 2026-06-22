@@ -20,7 +20,7 @@ export const navigation = [
       },
       {
         title: "Compliance & Governance",
-        href: "/platform/compliance",
+        href: "/ComplianceGovernance",
       },
     ],
   },

@@ -37,9 +37,9 @@ export default function Workflow() {
               font-['Clash_Grotesk']
             "
           >
-            From Vulnerabilities
+            From Policies To
             <span className="text-primary">
-              {" "}To Actionable Intelligence
+              {" "}Continuous Compliance
             </span>
           </h2>
 
@@ -53,10 +53,10 @@ export default function Workflow() {
               text-slate-600
             "
           >
-            ShieldVUE continuously discovers software components,
-            correlates vulnerabilities, evaluates risk exposure,
-            prioritizes remediation efforts, and delivers
-            actionable security intelligence.
+            ShieldVUE continuously evaluates software assets,
+            enforces governance policies, maintains audit trails,
+            and generates compliance evidence required for
+            regulatory and internal governance programs.
           </p>
         </div>
 
@@ -92,8 +92,8 @@ export default function Workflow() {
           "
         >
           <Image
-            src="/images/ChatGPT Image Jun 22, 2026, 11_58_34 AM.png"
-            alt="ShieldVUE Vulnerability Intelligence Workflow"
+            src="/images/ChatGPT Image Jun 22, 2026, 01_30_57 PM.png"
+            alt="ShieldVUE Compliance Governance Workflow"
             width={1600}
             height={900}
             priority

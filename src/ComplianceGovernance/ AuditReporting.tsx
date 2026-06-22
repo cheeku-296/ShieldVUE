@@ -3,43 +3,43 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {
-  BarChart3,
-  ShieldAlert,
-  Target,
-  TrendingUp,
+  FileCheck,
+  ClipboardCheck,
+  ShieldCheck,
+  FileText,
 } from "lucide-react";
 
-const riskFeatures = [
+const features = [
   {
-    icon: BarChart3,
-    title: "Context-Aware Risk Scoring",
+    icon: FileCheck,
+    title: "Audit Ready Evidence",
     description:
-      "Prioritize vulnerabilities using severity, exploitability, business impact, and asset criticality.",
+      "Maintain complete audit trails and evidence required for internal and external compliance reviews.",
   },
   {
-    icon: ShieldAlert,
-    title: "Threat Prioritization",
+    icon: ClipboardCheck,
+    title: "Compliance Monitoring",
     description:
-      "Identify the vulnerabilities that pose the greatest risk to your organization and focus remediation efforts accordingly.",
+      "Continuously evaluate software assets and governance controls against compliance requirements.",
   },
   {
-    icon: Target,
-    title: "Impact Analysis",
+    icon: ShieldCheck,
+    title: "Governance Visibility",
     description:
-      "Understand affected applications, dependencies, environments, and business services before incidents occur.",
+      "Track compliance posture, policy adherence, and governance effectiveness from a single dashboard.",
   },
   {
-    icon: TrendingUp,
-    title: "Remediation Intelligence",
+    icon: FileText,
+    title: "Executive Reporting",
     description:
-      "Track remediation progress, exposure trends, and overall risk reduction across your software ecosystem.",
+      "Generate audit-ready reports and governance summaries for leadership, auditors, and stakeholders.",
   },
 ];
 
-export default function RiskScoringSection() {
+export default function AuditReporting() {
   return (
     <section className="relative overflow-hidden bg-slate-50 py-32">
-      {/* Background Glow */}
+      {/* Glow */}
       <div
         className="
           absolute
@@ -92,7 +92,6 @@ export default function RiskScoringSection() {
                 font-medium
 
                 leading-[1.05]
-
                 tracking-[-0.03em]
 
                 text-slate-900
@@ -100,12 +99,10 @@ export default function RiskScoringSection() {
                 font-['Clash_Grotesk']
               "
             >
-              Context-Aware
+              Audit Ready Reporting
               <span className="text-primary">
-                {" "}Risk Scoring &
+                {" "}And Governance Visibility
               </span>
-              <br />
-              Prioritization
             </h2>
 
             <p
@@ -118,14 +115,14 @@ export default function RiskScoringSection() {
                 text-slate-600
               "
             >
-              Not every vulnerability carries the same risk.
-              ShieldVUE helps security teams focus on what matters
-              most by correlating CVEs with business context,
-              exploitability, and operational impact.
+              Centralize governance evidence, monitor compliance
+              posture, and generate audit-ready reports that
+              simplify regulatory reviews and strengthen
+              organizational accountability.
             </p>
 
             <div className="mt-12 space-y-6">
-              {riskFeatures.map((feature) => (
+              {features.map((feature) => (
                 <div
                   key={feature.title}
                   className="
@@ -139,6 +136,7 @@ export default function RiskScoringSection() {
                       flex
                       h-12
                       w-12
+
                       shrink-0
 
                       items-center
@@ -183,7 +181,7 @@ export default function RiskScoringSection() {
             </div>
           </motion.div>
 
-          {/* Right Dashboard */}
+          {/* Dashboard Image */}
           <motion.div
             initial={{
               opacity: 0,
@@ -217,7 +215,7 @@ export default function RiskScoringSection() {
             >
               <Image
                 src="/images/ChatGPT Image Jun 22, 2026, 01_36_14 PM.png"
-                alt="ShieldVUE Risk Scoring Dashboard"
+                alt="ShieldVUE Compliance Dashboard"
                 width={1400}
                 height={900}
                 className="
@@ -233,7 +231,7 @@ export default function RiskScoringSection() {
               className="
                 absolute
                 -left-8
-                top-10
+                top-12
 
                 hidden
                 lg:block
@@ -255,52 +253,7 @@ export default function RiskScoringSection() {
                 "
               >
                 <div className="text-xs text-slate-500">
-                  Critical Risks
-                </div>
-
-                <div
-                  className="
-                    mt-1
-
-                    text-xl
-                    font-bold
-
-                    text-red-600
-                  "
-                >
-                  18
-                </div>
-              </div>
-            </div>
-
-            {/* Floating Badge */}
-            <div
-              className="
-                absolute
-                -right-8
-                bottom-10
-
-                hidden
-                lg:block
-              "
-            >
-              <div
-                className="
-                  rounded-2xl
-
-                  border
-                  border-slate-200
-
-                  bg-white
-
-                  px-5
-                  py-4
-
-                  shadow-xl
-                "
-              >
-                <div className="text-xs text-slate-500">
-                  Risk Score
+                  Compliance Status
                 </div>
 
                 <div
@@ -313,7 +266,52 @@ export default function RiskScoringSection() {
                     text-primary
                   "
                 >
-                  9.1
+                  Audit Ready
+                </div>
+              </div>
+            </div>
+
+            {/* Floating Badge */}
+            <div
+              className="
+                absolute
+                -right-8
+                bottom-12
+
+                hidden
+                lg:block
+              "
+            >
+              <div
+                className="
+                  rounded-2xl
+
+                  border
+                  border-slate-200
+
+                  bg-white
+
+                  px-5
+                  py-4
+
+                  shadow-xl
+                "
+              >
+                <div className="text-xs text-slate-500">
+                  Governance Coverage
+                </div>
+
+                <div
+                  className="
+                    mt-1
+
+                    text-xl
+                    font-bold
+
+                    text-slate-900
+                  "
+                >
+                  Centralized
                 </div>
               </div>
             </div>

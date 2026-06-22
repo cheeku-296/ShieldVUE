@@ -14,33 +14,38 @@ import {
 const workflowSteps = [
   {
     icon: Code2,
-    title: "Collect Assets",
-    description: "Source Code, Containers, Binaries",
+    title: "Connect Repositories",
+    description: "Git Repositories, Registries & Build Pipelines",
   },
   {
     icon: Boxes,
-    title: "Generate SBOMs",
-    description: "Automated Software Composition Analysis",
+    title: "Discover Components",
+    description: "Identify Packages, Dependencies & Assets",
   },
   {
     icon: Database,
-    title: "Centralize Inventory",
-    description: "Repository & Version Management",
+    title: "Generate SBOM & CBOM",
+    description: "Create Complete Software & Crypto Inventories",
   },
   {
     icon: Radar,
-    title: "Map Vulnerabilities",
+    title: "Identify Vulnerabilities",
     description: "CVE Correlation & Threat Intelligence",
   },
   {
     icon: ShieldCheck,
-    title: "Enforce Governance",
-    description: "Policies, Compliance & Build Gates",
+    title: "Apply Policies",
+    description: "Governance, Compliance & Security Controls",
   },
   {
     icon: FileText,
-    title: "Report & Audit",
-    description: "Dashboards, Analytics & Reporting",
+    title: "Generate Reports",
+    description: "Audit Evidence, Dashboards & Analytics",
+  },
+  {
+    icon: Radar,
+    title: "Continuous Monitoring",
+    description: "Track Changes, Risks & New Threats",
   },
 ];
 
@@ -140,7 +145,7 @@ export default function Workflow() {
                 "
               />
 
-              <div className="grid grid-cols-6 gap-6">
+              <div className="grid grid-cols-7 gap-4">
                 {workflowSteps.map((step, index) => (
                   <motion.div
                     key={step.title}
@@ -372,21 +377,22 @@ export default function Workflow() {
         >
           <p
             className="
-              max-w-4xl
+    max-w-4xl
 
-              text-xl
+    text-xl
 
-              leading-9
+    leading-9
 
-              text-slate-700
-              text-center
-              mx-auto
-            "
+    text-slate-700
+    text-center
+    mx-auto
+  "
           >
-            ShieldVUE continuously discovers software components,
-            generates SBOMs, maps vulnerabilities, enforces
-            governance policies, and delivers compliance-ready
-            reporting from a single integrated platform.
+            ShieldVUE connects repositories, discovers software
+            components, generates SBOMs and CBOMs, identifies
+            vulnerabilities, applies governance policies, generates
+            audit-ready reports, and continuously monitors your
+            software supply chain from a single integrated platform.
           </p>
         </div>
       </div>

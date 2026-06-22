@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { Button } from "@/Common/UI/Button/Button";
 
 export default function CTA() {
@@ -172,10 +171,10 @@ export default function CTA() {
                 leading-[1.2]
               "
             >
-              Gain Complete Visibility Into
+              Build Audit-Ready
               <br className="hidden sm:block" />
               <span className="text-primary">
-                Your Cryptographic Assets
+                Compliance & Governance
               </span>
             </h2>
 
@@ -195,10 +194,10 @@ export default function CTA() {
                 mx-auto
               "
             >
-              Discover cryptographic algorithms, certificates,
-              keys, and protocols across your software ecosystem.
-              Build comprehensive CBOMs, reduce cryptographic risk,
-              and prepare for the transition to quantum-safe security.
+              Centralize policy enforcement, compliance monitoring,
+              governance controls, audit evidence, and reporting
+              into a single platform designed for modern software
+              supply chain security.
             </p>
 
             <div
@@ -267,7 +266,6 @@ export default function CTA() {
                   flex
                   items-center
                   justify-center
-                  gap-2
 
                   shadow-sm
 
