@@ -8,19 +8,19 @@ export const navigation = [
       },
       {
         title: "SBOM Management",
-        href: "/sbom",
+        href: "/overview/sbom-management",
       },
       {
         title: "CBOM Management",
-        href: "/cbom",
+        href: "/overview/cbom-management",
       },
       {
         title: "Vulnerability Intelligence",
-        href: "/VulnerabilityIntelligence",
+        href: "/overview/vulnerability-intelligence",
       },
       {
         title: "Compliance & Governance",
-        href: "/ComplianceGovernance",
+        href: "/overview/compliance-governance",
       },
     ],
   },

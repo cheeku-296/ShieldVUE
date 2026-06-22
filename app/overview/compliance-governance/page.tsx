@@ -10,16 +10,12 @@ import CTA from "@/ComplianceGovernance/CTA";
 export default function PlatformOverviewPage() {
   return (
     <main className="overflow-x-hidden">
-        <Navbar/>
     <ComplianceHero/>
     <WhatIsCompliance/>
     <GovernanceCapabilities/>
     <Workflow/>
     <AuditReporting/>
     <CTA/>
-
-
-      <Footer/>
     </main>
   );
 }
