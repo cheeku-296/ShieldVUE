@@ -323,7 +323,16 @@ export default function DemoForm() {
                     )}
                   </div>
                 </div>
-                <div className="text-sm text-slate-500 mb-[44px]">
+                <div className="text-sm text-slate-500 mb-1">
+                  Email:{" "}
+                  <a
+                    href="mailto:presales@apmosys.com"
+                    className="text-primary font-medium"
+                  >
+                    presales@apmosys.com
+                  </a>
+                </div>
+                <div className="text-sm text-slate-500 mb-6">
                   Phone:{" "}
                   <span className="text-slate-900 font-medium">
                     +91 89768 19122

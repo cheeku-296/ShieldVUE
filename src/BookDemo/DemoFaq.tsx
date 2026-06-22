@@ -11,24 +11,24 @@ const faqs = [
       "Most ShieldVUE demos take between 30 and 45 minutes, including a live platform walkthrough and a Q&A session with our experts.",
   },
   {
-    question: "Can the demo be customized to our environment?",
+    question: "Who should attend the demo from our side?",
     answer:
-      "Absolutely. We tailor every session around your software ecosystem, security objectives, compliance requirements, and use cases.",
+      "We recommend including stakeholders from your security, compliance, and engineering teams to ensure all perspectives are covered during the session.",
   },
   {
-    question: "Does ShieldVUE support both SBOM and CBOM?",
+    question: "What happens after I book a demo?",
     answer:
-      "Yes. ShieldVUE provides complete visibility into Software Bills of Materials (SBOMs) and Cryptography Bills of Materials (CBOMs) for comprehensive supply chain security.",
+      "You will receive a calendar invitation with a meeting link. One of our pre-sales engineers or sales representatives will also reach out to understand your specific requirements beforehand.",
   },
   {
-    question: "Will we see vulnerability intelligence capabilities?",
+    question: "How do I reschedule or cancel my demo?",
     answer:
-      "Yes. The demo includes vulnerability discovery, CVE correlation, remediation prioritization, and compliance reporting workflows.",
+      "You can easily reschedule or cancel using the links provided in your calendar invitation, or by directly replying to the confirmation email.",
   },
   {
-    question: "Is there any commitment after the demo?",
+    question: "Is there any commitment or cost after the demo?",
     answer:
-      "No. The demo is completely obligation-free and designed to help you evaluate whether ShieldVUE aligns with your security and compliance goals.",
+      "No. The demo is completely free of charge, obligation-free, and designed to help you evaluate whether ShieldVUE aligns with your security and compliance goals.",
   },
 ];
 

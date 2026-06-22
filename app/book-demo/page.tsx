@@ -12,7 +12,7 @@ export default function BookDemoPage() {
       <Navbar />
 
       <main>
-        <BookDemoHero />
+        {/* <BookDemoHero /> */}
         {/* <DemoBenefits /> */}
         <DemoForm />
         <DemoFaq />
