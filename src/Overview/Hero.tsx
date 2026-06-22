@@ -287,7 +287,7 @@ export default function Hero() {
                 "
               >
                 <source
-                  src="/videos/shieldvue-demo.mp4"
+                  src="/videos/shield-demo.mp4"
                   type="video/mp4"
                 />
               </video>

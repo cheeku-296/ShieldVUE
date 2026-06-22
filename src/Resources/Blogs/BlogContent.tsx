@@ -42,8 +42,7 @@ export default function BlogContent() {
                       src={blog.image}
                       alt={blog.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      unoptimized
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
                   <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider mb-3 font-['Manrope']">
@@ -131,7 +130,6 @@ export default function BlogContent() {
                     alt={blog.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    unoptimized
                   />
                 </div>
                 <div className="flex items-center justify-between text-[10px] font-bold uppercase tracking-wider mb-2 font-['Manrope']">

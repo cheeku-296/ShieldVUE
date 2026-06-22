@@ -17,7 +17,7 @@ export default function SBOMHero() {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: "url('/images/sbomHero.png')",
+          backgroundImage: "url('/images/sbom-hero.png')",
           backgroundSize: "cover",
           backgroundPosition: "right center",
         }}

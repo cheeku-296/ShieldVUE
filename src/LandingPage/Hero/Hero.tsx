@@ -54,7 +54,6 @@ export default function Hero() {
             fill
             className="object-cover object-right"
             priority
-            unoptimized
           />
           {/* Gradient overlay to ensure text readability on the left */}
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent w-[130%]" />

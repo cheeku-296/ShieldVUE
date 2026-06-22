@@ -11,7 +11,7 @@ export default function CBOMHero() {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: "url('/images/ChatGPT Image Jun 20, 2026, 05_11_55 PM.png')",
+          backgroundImage: "url('/images/cbom-hero.png')",
           backgroundSize: "cover",
           backgroundPosition: "right center",
         }}

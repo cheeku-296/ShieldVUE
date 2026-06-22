@@ -186,7 +186,7 @@ export default function PlatformDemo() {
                 "
               >
                 <source
-                  src="/videos/0_Shield_Digital_3840x2160.mp4"
+                  src="/videos/shield-demo.mp4"
                   type="video/mp4"
                 />
               </video>

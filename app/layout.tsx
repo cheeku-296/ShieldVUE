@@ -24,8 +24,44 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "ShieldVUE",
-  description: "Automated SBOM and CBOM intelligence",
+  title: {
+    default: "ShieldVUE | Intelligent Open Source & Supply Chain Security",
+    template: "%s | ShieldVUE"
+  },
+  description: "Enterprise-grade automated SBOM and CBOM intelligence. Secure your software supply chain, manage open-source risks, and ensure continuous compliance with ShieldVUE.",
+  keywords: [
+    "SBOM",
+    "CBOM",
+    "Software Supply Chain Security",
+    "Open Source Risk Management",
+    "Vulnerability Management",
+    "Continuous Compliance",
+    "DevSecOps"
+  ],
+  authors: [{ name: "ApMoSys" }],
+  creator: "ApMoSys",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://shieldvue.com",
+    title: "ShieldVUE | Intelligent Open Source & Supply Chain Security",
+    description: "Enterprise-grade automated SBOM and CBOM intelligence. Secure your software supply chain, manage open-source risks, and ensure continuous compliance.",
+    siteName: "ShieldVUE",
+    images: [
+      {
+        url: "/brand_logo/shieldvue_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "ShieldVUE Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ShieldVUE | Intelligent Open Source & Supply Chain Security",
+    description: "Enterprise-grade automated SBOM and CBOM intelligence. Secure your software supply chain, manage open-source risks, and ensure continuous compliance.",
+    images: ["/brand_logo/shieldvue_logo.png"],
+  },
 };
 
 

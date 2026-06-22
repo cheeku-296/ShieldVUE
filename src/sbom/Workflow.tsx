@@ -133,7 +133,7 @@ export default function Workflow() {
   "
                     >
                         <Image
-                            src="/images/ChatGPT Image Jun 20, 2026, 04_20_20 PM.png"
+                            src="/images/sbom-workflow.png"
                             alt="ShieldVUE SBOM Workflow"
                             width={1600}
                             height={900}

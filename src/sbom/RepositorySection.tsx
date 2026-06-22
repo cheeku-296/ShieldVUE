@@ -221,7 +221,7 @@ export default function RepositorySection() {
               "
             >
               <Image
-                src="/images/ChatGPT Image Jun 20, 2026, 04_59_03 PM.png"
+                src="/images/sbom-repository.png"
                 alt="ShieldVUE Repository Dashboard"
                 width={1400}
                 height={900}

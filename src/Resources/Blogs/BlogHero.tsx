@@ -50,7 +50,6 @@ export default function BlogHero() {
             fill
             className="object-cover object-right"
             priority
-            unoptimized
           />
           {/* Enhanced gradient overlay to ensure the text remains fully readable on the left */}
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent w-[140%]" />

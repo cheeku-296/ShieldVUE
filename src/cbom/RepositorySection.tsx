@@ -216,7 +216,7 @@ export default function RepositorySection() {
               "
             >
               <Image
-                src="/images/ChatGPT Image Jun 20, 2026, 06_20_17 PM.png"
+                src="/images/cbom-repository.png"
                 alt="ShieldVUE CBOM Repository Dashboard"
                 width={1400}
                 height={900}

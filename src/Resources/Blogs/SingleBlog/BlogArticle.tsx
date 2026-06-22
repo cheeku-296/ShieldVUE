@@ -27,9 +27,8 @@ export default function BlogArticle({ id }: BlogArticleProps) {
             src={blog.image}
             alt={blog.title}
             fill
-            className="object-contain object-right mix-blend-multiply opacity-60"
+            className="object-contain object-right mix-blend-multiply opacity-50"
             priority
-            unoptimized
           />
           {/* Subtle fade to ensure text readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#F8F8FA]/60 via-[#F8F8FA]/20 to-transparent w-[100%]" />

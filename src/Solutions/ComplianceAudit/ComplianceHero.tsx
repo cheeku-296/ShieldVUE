@@ -38,12 +38,11 @@ export default function ComplianceHero() {
           style={{ y: yBg, scale: 1.1 }}
         >
           <Image
-            src="/solutions/Continuous Compliance & Audit Readiness.png"
+            src="/solutions/compliance-audit.png"
             alt="Secure Digital Governance Visualization"
             fill
             className="object-cover object-right"
             priority
-            unoptimized
           />
           {/* Gradient overlay to ensure text readability on the left */}
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent w-[130%]" />
