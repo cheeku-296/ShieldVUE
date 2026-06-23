@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-40 pb-16">
+    <section className="relative overflow-hidden pt-40 pb-32 min-h-[80vh] flex items-center">
       {/* Background Image */}
       <div
         className="absolute inset-0"
@@ -44,7 +44,7 @@ export default function Hero() {
         "
       />
 
-      <div className="shield-container relative z-10">
+      <div className="shield-container relative z-10 w-full">
         <div className="max-w-4xl">
           {/* Heading */}
           <motion.h1

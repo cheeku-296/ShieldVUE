@@ -56,9 +56,7 @@ export default function PlatformDemo() {
               font-['Clash_Grotesk']
             "
           >
-            See ShieldVUE
-            <br />
-            In Action
+            See ShieldVUE In Action
           </h2>
 
           <p
