@@ -84,10 +84,10 @@ export default function CBOMHero() {
               font-['Clash_Grotesk']
             "
           >
-            Complete Visibility Into
+            Visibility Into Your
             <br />
 
-            Your
+            
             <span className="text-primary">
               {" "}Cryptographic Assets
             </span>

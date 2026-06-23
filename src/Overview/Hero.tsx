@@ -66,11 +66,11 @@ export default function Hero() {
               font-['Clash_Grotesk']
             "
           >
-            Software Supply
-            <br />
-            Chain Security
+            Software Supply Chain
+
+           
             <span className="text-primary">
-              {" "}In One Platform
+              {" "}Security Simplified
             </span>
           </motion.h1>
 

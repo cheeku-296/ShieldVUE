@@ -112,12 +112,13 @@ export default function SBOMHero() {
               font-['Clash_Grotesk']
             "
           >
-            Complete Visibility Into
+            Know Every Component
             <br />
 
-            Your Software
+            {/* Your Software */}
             <span className="text-primary">
-              {" "}Supply Chain
+              {" "}In Your Software
+
             </span>
           </motion.h1>
 
