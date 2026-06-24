@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function DependencyMapping() {
   return (
-    <section id="features" className="py-24 bg-white border-y border-slate-100">
+    <section id="features" className="py-12 md:py-24 bg-white border-y border-slate-100">
       <div className="shield-container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
@@ -16,7 +16,7 @@ export default function DependencyMapping() {
             transition={{ duration: 0.6 }}
           >
             
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-6 leading-[1.1]">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-6 leading-[1.1]">
               Uncover Hidden <span className="text-primary">Transitive Risks</span>
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed mb-8">

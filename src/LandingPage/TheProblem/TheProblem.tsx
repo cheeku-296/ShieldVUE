@@ -49,7 +49,7 @@ export default function TheProblem() {
   };
 
   return (
-    <section className="bg-white pt-40 pb-24 lg:pt-56 lg:pb-32 relative">
+    <section className="bg-white pt-28 md:pt-40 pb-12 md:pb-24 lg:pt-56 lg:pb-32 relative">
       <div className="shield-container relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
@@ -61,7 +61,7 @@ export default function TheProblem() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl md:text-5xl font-medium text-slate-900 tracking-[-0.46px] leading-[1.1] font-['Clash_Grotesk']">
+              <h2 className="text-3xl md:text-5xl font-medium text-slate-900 tracking-[-0.46px] leading-[1.1] font-['Clash_Grotesk']">
                 Why <br className="hidden lg:block" />Organizations <br className="hidden lg:block" /> Need <br className="hidden lg:block" /> <span className="text-primary">ShieldVUE.</span>
               </h2>
               <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-lg">

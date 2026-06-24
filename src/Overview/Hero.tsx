@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-40 pb-32 min-h-[80vh] flex items-center">
+    <section className="relative overflow-hidden pt-28 md:pt-40 pb-8 md:pb-16 md:pb-32 min-h-[80vh] flex items-center">
       {/* Background Image */}
       <Image
         src="/images/overviewHero.png"
@@ -56,7 +56,7 @@ export default function Hero() {
             }}
             className="
               max-w-5xl
-              text-5xl
+              text-3xl md:text-5xl
               md:text-6xl
               lg:text-7xl
               font-medium
@@ -104,15 +104,16 @@ export default function Hero() {
               duration: 0.6,
               delay: 0.3,
             }}
-            className="mt-10 flex flex-wrap gap-4"
+            className="mt-10 flex flex-row gap-3"
           >
             <Button
               size="lg"
               className="
                 h-11
-                px-6
+                flex-1 sm:flex-none
+                px-3 sm:px-6
                 rounded-md
-                text-sm
+                text-xs sm:text-sm
                 font-semibold
                 bg-primary
                 hover:bg-primary/90
@@ -132,9 +133,10 @@ export default function Hero() {
               variant="outline"
               className="
                 h-11
-                px-6
+                flex-1 sm:flex-none
+                px-3 sm:px-6
                 rounded-md
-                text-sm
+                text-xs sm:text-sm
                 font-medium
                 border
                 border-slate-200
@@ -144,12 +146,13 @@ export default function Hero() {
                 hover:bg-white/80
                 flex
                 items-center
-                gap-2
+                justify-center
+                gap-1 sm:gap-2
                 shadow-sm
               "
             >
               View Documentation
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
             </Button>
           </motion.div>
         </div>

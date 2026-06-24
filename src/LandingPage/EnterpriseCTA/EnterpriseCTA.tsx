@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function EnterpriseCTA() {
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-white py-10 md:py-16 md:py-24">
       <div className="shield-container">
         <div className="relative rounded-xl bg-gradient-to-br from-slate-100/80 to-slate-200/40 backdrop-blur-2xl border border-white/60 shadow-[0_8px_40px_-12px_rgba(0,0,0,0.1)] overflow-hidden px-6 py-12 sm:px-12 sm:py-16 md:px-16 lg:px-20">
           

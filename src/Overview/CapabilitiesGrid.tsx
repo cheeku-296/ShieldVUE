@@ -93,7 +93,7 @@ const capabilities = [
 
 export default function CapabilitiesGrid() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-16">
+    <section className="relative overflow-hidden bg-slate-50 py-10 md:py-16">
       {/* Background Pattern */}
       <div
         className="
@@ -125,10 +125,10 @@ export default function CapabilitiesGrid() {
 
       <div className="shield-container relative z-10">
         {/* Heading */}
-        <div className="mx-auto mb-20 max-w-3xl text-center">
+        <div className="mx-auto mb-10 md:mb-20 max-w-3xl text-center">
           <h2
             className="
-              text-4xl
+              text-2xl md:text-4xl
               md:text-5xl
 
               font-medium

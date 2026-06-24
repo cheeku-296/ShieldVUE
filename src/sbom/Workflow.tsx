@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function Workflow() {
     return (
-        <section className="relative overflow-hidden bg-slate-50 py-16">
+        <section className="relative overflow-hidden bg-slate-50 py-10 md:py-16">
             {/* Background */}
             <div
                 className="
@@ -33,7 +33,7 @@ export default function Workflow() {
                     <h2
                         className="
               mt-6
-              text-4xl
+              text-2xl md:text-4xl
               md:text-5xl
               font-medium
               leading-[1.05]
@@ -74,7 +74,7 @@ export default function Workflow() {
                         duration: 0.7,
                     }}
                     className="
-            mt-16
+            mt-8 md:mt-16
 
             overflow-hidden
 
@@ -105,7 +105,7 @@ export default function Workflow() {
                             duration: 0.7,
                         }}
                         className="
-    mt-16
+    mt-8 md:mt-16
 
     overflow-hidden
 

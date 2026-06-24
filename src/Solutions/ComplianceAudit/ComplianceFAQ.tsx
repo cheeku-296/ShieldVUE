@@ -23,9 +23,9 @@ export default function ComplianceFAQ() {
   ];
 
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-12 md:py-24 bg-slate-50">
       <div className="shield-container max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-12 text-center leading-[1.1]">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-6 md:mb-12 text-center leading-[1.1]">
           Frequently Asked <span className="text-primary">Questions</span>
         </h2>
 

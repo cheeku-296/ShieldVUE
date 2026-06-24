@@ -5,10 +5,10 @@ import { FileCode, Lock, Activity } from "lucide-react";
 
 export default function SupplyChainFeatures() {
   return (
-    <section className="py-24 bg-slate-50 border-y border-slate-100">
+    <section className="py-12 md:py-24 bg-slate-50 border-y border-slate-100">
       <div className="shield-container">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-4">
             Advanced Supply Chain Capabilities
           </h2>
         </div>

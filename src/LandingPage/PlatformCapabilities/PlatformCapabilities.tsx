@@ -35,9 +35,9 @@ export default function PlatformCapabilities() {
   ];
 
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-12 md:py-24">
       <div className="shield-container">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-4">
             ShieldVUE Platform
           </h2>

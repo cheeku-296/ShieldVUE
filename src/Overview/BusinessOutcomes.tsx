@@ -57,7 +57,7 @@ const outcomes = [
 
 export default function BusinessOutcomes() {
   return (
-    <section className="relative overflow-hidden bg-white py-16">
+    <section className="relative overflow-hidden bg-white py-10 md:py-16">
       {/* Background Pattern */}
       <div
         className="
@@ -94,7 +94,7 @@ export default function BusinessOutcomes() {
         <div className="mx-auto max-w-3xl text-center">
           <h2
             className="
-              text-4xl
+              text-2xl md:text-4xl
               md:text-5xl
 
               font-medium
@@ -127,7 +127,7 @@ export default function BusinessOutcomes() {
         </div>
 
         {/* Outcomes Grid */}
-        <div className="mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-10 md:mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {outcomes.map((item, index) => (
             <motion.div
               key={item.title}
@@ -223,7 +223,7 @@ export default function BusinessOutcomes() {
                   className="
                     mt-8
 
-                    text-5xl
+                    text-3xl md:text-5xl
 
                     font-bold
 

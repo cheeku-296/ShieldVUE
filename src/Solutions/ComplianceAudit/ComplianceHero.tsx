@@ -30,7 +30,7 @@ export default function ComplianceHero() {
   };
 
   return (
-    <section ref={containerRef} className="relative bg-white pt-32 pb-24 md:pb-48 lg:pt-48 lg:pb-48 min-h-[100vh] flex flex-col justify-center border-b border-slate-100">
+    <section ref={containerRef} className="relative bg-white pt-32 pb-12 md:pb-24 md:pb-48 lg:pt-48 lg:pb-48 min-h-[100vh] flex flex-col justify-center border-b border-slate-100">
       {/* Light Enterprise Background Image with Parallax */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <motion.div
@@ -59,7 +59,7 @@ export default function ComplianceHero() {
             animate="visible"
           >
          
-            <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk']">
+            <motion.h1 variants={itemVariants} className="text-4xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk']">
               Continuous <br />
               <span className="text-primary font-medium">Compliance.</span>
             </motion.h1>
@@ -68,13 +68,13 @@ export default function ComplianceHero() {
               Automate your governance posture and ensure continuous compliance with NIST, Executive Orders, and industry standards without slowing down engineering.
             </motion.p>
 
-            <motion.div variants={itemVariants} className="mt-10 flex flex-wrap gap-4">
-              <Button asChild size="lg" className="h-11 px-6 rounded-md text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 border-0">
+            <motion.div variants={itemVariants} className="mt-10 flex flex-row gap-3">
+              <Button asChild size="lg" className="h-11 flex-1 sm:flex-none px-3 sm:px-6 rounded-md text-xs sm:text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 border-0">
                 <Link href="/book-demo">Automate Compliance</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="h-11 px-6 rounded-md text-sm font-medium border border-slate-200 text-slate-800 bg-white/50 backdrop-blur-md hover:bg-white/80 flex items-center gap-2 shadow-sm">
+              <Button asChild size="lg" variant="outline" className="h-11 flex-1 sm:flex-none px-3 sm:px-6 rounded-md text-xs sm:text-sm font-medium border border-slate-200 text-slate-800 bg-white/50 backdrop-blur-md hover:bg-white/80 flex items-center justify-center gap-1 sm:gap-2 shadow-sm">
                 <Link href="#features">
-                  View Frameworks <ArrowRight className="h-4 w-4" />
+                  View Frameworks <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                 </Link>
               </Button>
             </motion.div>

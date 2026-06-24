@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function SbomCbom() {
   return (
-    <section className="bg-slate-50 py-24 border-y border-slate-100">
+    <section className="bg-slate-50 py-12 md:py-24 border-y border-slate-100">
       <div className="shield-container">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-4">
             Beyond the Standard SBOM
           </h2>

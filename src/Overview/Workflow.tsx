@@ -51,7 +51,7 @@ const workflowSteps = [
 
 export default function Workflow() {
   return (
-    <section className="relative overflow-hidden bg-white py-16">
+    <section className="relative overflow-hidden bg-white py-10 md:py-16">
       {/* Background */}
       <div
         className="
@@ -90,7 +90,7 @@ export default function Workflow() {
         <div className="max-w-3xl">
           <h2
             className="
-              text-4xl
+              text-2xl md:text-4xl
               md:text-5xl
 
               font-medium
@@ -124,7 +124,7 @@ export default function Workflow() {
         </div>
 
         {/* Workflow */}
-        <div className="mt-24">
+        <div className="mt-12 md:mt-24">
           {/* Desktop */}
           <div className="hidden xl:block">
             <div className="relative">

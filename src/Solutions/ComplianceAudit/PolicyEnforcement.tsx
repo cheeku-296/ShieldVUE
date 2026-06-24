@@ -5,7 +5,7 @@ import { GitPullRequest, XCircle, Search } from "lucide-react";
 
 export default function PolicyEnforcement() {
   return (
-    <section className="py-24 bg-slate-50 border-y border-slate-100">
+    <section className="py-12 md:py-24 bg-slate-50 border-y border-slate-100">
       <div className="shield-container">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           
@@ -14,7 +14,7 @@ export default function PolicyEnforcement() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-6 leading-[1.1]">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-6 leading-[1.1]">
               Shift-Left <span className="text-primary">Governance</span>
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">

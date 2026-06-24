@@ -3,13 +3,16 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronDown, Menu } from "lucide-react";
+import { ChevronDown, Menu, X, ChevronRight } from "lucide-react";
 import { navigation } from "./NavBarData";
 import { Button } from "@/Common/UI/Button/Button";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeMobileDropdown, setActiveMobileDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,11 +33,20 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isMobileMenuOpen]);
+
   return (
     <header className={`fixed top-0 left-0 right-0 w-full z-50 border-b border-slate-200 bg-white shadow-sm transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"}`}>
       <div className="shield-container flex h-16 items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-1">
+        <Link href="/" className="flex items-center gap-1 z-50" onClick={() => setIsMobileMenuOpen(false)}>
           <Image 
             src="/brand_logo/shieldvue_logo.png" 
             alt="ShieldVUE Logo Icon" 
@@ -133,14 +145,17 @@ export default function Navbar() {
             "
           >
            <Link href="/book-demo">
-    Book A Demo
-  </Link>
+            Book A Demo
+          </Link>
           </Button>
         </div>
 
         {/* Mobile Menu Button */}
         <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="
+            relative
+            z-50
             rounded-lg
             p-2
             text-slate-600
@@ -149,9 +164,74 @@ export default function Navbar() {
             lg:hidden
           "
         >
-          <Menu className="h-6 w-6" />
+          {isMobileMenuOpen ? <X className="h-6 w-6 text-primary" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="absolute left-0 top-[64px] w-full h-[calc(100vh-64px)] bg-white z-40 lg:hidden overflow-y-auto pb-12 md:pb-24 shadow-xl"
+          >
+            <div className="flex flex-col px-4 py-4 gap-2">
+              {navigation.map((group) => (
+                <div key={group.title} className="flex flex-col border-b border-slate-100 last:border-0 pb-2">
+                  <button
+                    onClick={() => setActiveMobileDropdown(activeMobileDropdown === group.title ? null : group.title)}
+                    className="flex items-center justify-between py-3 text-base font-bold text-slate-800"
+                  >
+                    {group.title}
+                    <ChevronDown
+                      className={`h-4 w-4 text-slate-500 transition-transform duration-300 ${
+                        activeMobileDropdown === group.title ? "rotate-180 text-primary" : ""
+                      }`}
+                    />
+                  </button>
+                  
+                  <AnimatePresence>
+                    {activeMobileDropdown === group.title && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden flex flex-col gap-1 pt-1"
+                      >
+                        {group.items.map((item) => (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="flex items-center text-sm font-medium text-slate-600 py-2.5 px-3 rounded-lg hover:bg-primary/5 hover:text-primary transition-colors"
+                          >
+                            <ChevronRight className="h-3.5 w-3.5 mr-2 text-primary/50" />
+                            {item.title}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              ))}
+              
+              <div className="mt-6 px-2">
+                <Button
+                  className="w-full h-11 rounded-lg text-sm font-bold bg-primary text-white shadow-lg shadow-primary/25"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Link href="/book-demo" className="w-full text-center flex items-center justify-center">
+                    Book A Demo
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

@@ -11,10 +11,10 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-12 md:py-24">
       <div className="shield-container">
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-3xl md:text-4xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-20">
+          <h2 className="text-2xl md:text-4xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-4">
             How ShieldVUE Works
           </h2>
           <p className="text-lg text-slate-600">

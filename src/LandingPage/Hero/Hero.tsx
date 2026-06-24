@@ -41,7 +41,7 @@ export default function Hero() {
   };
 
   return (
-    <section ref={containerRef} className="relative bg-white pt-32 pb-24 md:pb-48 lg:pt-48 lg:pb-64 min-h-[100vh] flex flex-col justify-center">
+    <section ref={containerRef} className="relative bg-white pt-32 pb-12 md:pb-24 md:pb-48 lg:pt-48 lg:pb-64 min-h-[100vh] flex flex-col justify-center">
       {/* Light Enterprise Background Image with Parallax */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <motion.div
@@ -71,7 +71,7 @@ export default function Hero() {
           >
             {/* Eyebrow */}
 
-            <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk']">
+            <motion.h1 variants={itemVariants} className="text-4xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk']">
               <span className="md:whitespace-nowrap">Know Your Software</span> <br />
               <span className="text-primary font-medium md:whitespace-nowrap">Supply Chain.</span>
             </motion.h1>
@@ -81,22 +81,22 @@ export default function Hero() {
               cryptographic assets, and compliance risks before they become business problems.
             </motion.p>
 
-            <motion.div variants={itemVariants} className="mt-10 flex flex-wrap gap-4">
+            <motion.div variants={itemVariants} className="mt-10 flex flex-row gap-3">
               <Button
                 asChild
                 size="lg"
-                className="h-11 px-6 rounded-md text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 border-0"
+                className="h-11 flex-1 sm:flex-none px-3 sm:px-6 rounded-md text-xs sm:text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 border-0"
               >
                 <Link href="/book-demo">
                   Book Demo
                 </Link>
               </Button>
 
-              <Button size="lg" variant="outline" className="h-11 px-6 rounded-md text-sm font-medium border border-slate-200 text-slate-800 bg-white/50 backdrop-blur-md hover:bg-white/80 flex items-center gap-2 shadow-sm">
-                 <Link href="/overview">
+              <Button size="lg" variant="outline" className="h-11 flex-1 sm:flex-none px-3 sm:px-6 rounded-md text-xs sm:text-sm font-medium border border-slate-200 text-slate-800 bg-white/50 backdrop-blur-md hover:bg-white/80 flex items-center justify-center gap-1 sm:gap-2 shadow-sm">
+                 <Link href="/overview" className="flex items-center gap-1 sm:gap-2">
                 Explore Platform
+                <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                 </Link>
-                <ArrowRight className="h-4 w-4" />
               </Button>
             </motion.div>
           </motion.div>
@@ -115,7 +115,7 @@ export default function Hero() {
 
       {/* 3 Overlapping Glassmorphic Cards with Parallax */}
       <motion.div
-        className="relative mt-16 md:absolute md:left-0 md:right-0 md:-bottom-24 lg:-bottom-36 z-20 mx-auto w-full px-4 sm:px-6 lg:px-8 shield-container"
+        className="relative mt-8 md:mt-16 md:absolute md:left-0 md:right-0 md:-bottom-24 lg:-bottom-36 z-20 mx-auto w-full px-4 sm:px-6 lg:px-8 shield-container"
         style={{ y: yCards }}
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 pb-8 md:pb-0">
@@ -125,7 +125,7 @@ export default function Hero() {
               <h3 className="text-xl font-medium mb-2">Automated SBOM Generation</h3>
               <p className="text-sm leading-relaxed text-white/90">Automatically generate standardized SBOMs directly from source code and CI/CD pipelines.</p>
             </div>
-            <a href="#" className="text-sm font-medium mt-4 hover:underline flex items-center gap-1">Learn More <ArrowRight className="h-4 w-4" /></a>
+            <a href="#" className="text-sm font-medium mt-4 hover:underline flex items-center gap-1">Learn More <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" /></a>
           </div>
           {/* Card 2: White Color */}
           <div className="flex flex-col justify-between items-start bg-white/50 backdrop-blur-2xl border border-white/60 rounded-lg p-8 min-h-[220px] shadow-[0_8px_32px_rgba(0,0,0,0.1)] text-slate-800 transform transition-all duration-300 md:hover:-translate-y-2 hover:bg-white/60">
@@ -133,7 +133,7 @@ export default function Hero() {
               <h3 className="text-xl font-medium mb-2">Continuous Vulnerability Mapping</h3>
               <p className="text-sm leading-relaxed text-slate-700">Correlate components against global vulnerability databases to highlight active risks in real-time.</p>
             </div>
-            <a href="#" className="text-sm font-medium mt-4 text-primary hover:underline flex items-center gap-1">View Features <ArrowRight className="h-4 w-4" /></a>
+            <a href="#" className="text-sm font-medium mt-4 text-primary hover:underline flex items-center gap-1">View Features <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" /></a>
           </div>
           {/* Card 3: White Color */}
           <div className="flex flex-col justify-between items-start bg-white/50 backdrop-blur-2xl border border-white/60 rounded-lg p-8 min-h-[220px] shadow-[0_8px_32px_rgba(0,0,0,0.1)] text-slate-800 transform transition-all duration-300 md:hover:-translate-y-2 hover:bg-white/60">
@@ -141,7 +141,7 @@ export default function Hero() {
               <h3 className="text-xl font-medium mb-2">Compliance Ready</h3>
               <p className="text-sm leading-relaxed text-slate-700">Meet regulatory requirements instantly with audit-ready reporting and strict governance.</p>
             </div>
-            <a href="#" className="text-sm font-semibold mt-4 text-primary hover:underline flex items-center gap-1">Discover Options <ArrowRight className="h-4 w-4" /></a>
+            <a href="#" className="text-sm font-semibold mt-4 text-primary hover:underline flex items-center gap-1">Discover Options <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" /></a>
           </div>
         </div>
       </motion.div>

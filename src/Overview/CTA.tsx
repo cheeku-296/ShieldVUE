@@ -6,7 +6,7 @@ import { Button } from "@/Common/UI/Button/Button";
 
 export default function CTA() {
   return (
-    <section className="relative overflow-hidden bg-white py-16">
+    <section className="relative overflow-hidden bg-white py-10 md:py-16">
       <div className="shield-container">
         <div
           className="
@@ -53,7 +53,7 @@ export default function CTA() {
           <div className="relative z-10 mx-auto max-w-4xl text-center">
             <h2
               className="
-                text-3xl
+                text-xl md:text-3xl
                 md:text-4xl
                 lg:text-5xl
                 font-medium

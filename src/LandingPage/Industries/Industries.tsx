@@ -3,9 +3,9 @@ import { Landmark, Umbrella, HeartPulse, Building2, Cloud, Server, ShieldCheck, 
 
 export default function Industries() {
   return (
-    <section className="bg-slate-50 py-32 relative overflow-hidden border-y border-slate-200">
+    <section className="bg-slate-50 py-10 md:py-16 md:py-32 relative overflow-hidden border-y border-slate-200">
       <div className="shield-container relative z-10">
-        <div className="max-w-3xl mb-16 text-center mx-auto">
+        <div className="max-w-3xl mb-8 md:mb-16 text-center mx-auto">
           <h2 className="text-3xl md:text-5xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-6">
             Securing Regulated Industries
           </h2> 

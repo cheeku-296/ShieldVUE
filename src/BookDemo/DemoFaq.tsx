@@ -36,7 +36,7 @@ export default function DemoFaq() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section className="relative overflow-hidden bg-white py-20">
+    <section className="relative overflow-hidden bg-white py-12 md:py-20">
       {/* Background Pattern */}
       <div
         className="
@@ -75,7 +75,7 @@ export default function DemoFaq() {
               className="
                 mt-8
 
-                text-4xl
+                text-2xl md:text-4xl
                 md:text-5xl
 
                 font-medium

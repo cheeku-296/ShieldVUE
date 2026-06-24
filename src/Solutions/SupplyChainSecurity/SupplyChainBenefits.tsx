@@ -18,7 +18,7 @@ export default function SupplyChainBenefits() {
         <div className="grid lg:grid-cols-3 gap-12 text-center divide-y lg:divide-y-0 lg:divide-x divide-primary/20">
           {metrics.map((metric, index) => (
             <div key={index} className="pt-6 lg:pt-0 px-8">
-              <div className="text-5xl md:text-6xl font-medium font-['Clash_Grotesk'] text-primary mb-2">
+              <div className="text-4xl md:text-6xl font-medium font-['Clash_Grotesk'] text-primary mb-2">
                 {metric.value}
               </div>
               <div className="text-base md:text-lg text-slate-800 font-medium">{metric.label}</div>

@@ -4,9 +4,9 @@ import { ArrowRight } from "lucide-react";
 
 export default function SupplyChainCTA() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-12 md:py-24 bg-white">
       <div className="shield-container">
-        <div className="relative rounded-xl bg-gradient-to-br from-slate-100/80 to-slate-200/40 backdrop-blur-2xl border border-white/60 shadow-[0_8px_40px_-12px_rgba(0,0,0,0.1)] overflow-hidden py-16 px-6 md:px-16 text-center">
+        <div className="relative rounded-xl bg-gradient-to-br from-slate-100/80 to-slate-200/40 backdrop-blur-2xl border border-white/60 shadow-[0_8px_40px_-12px_rgba(0,0,0,0.1)] overflow-hidden py-10 md:py-16 px-6 md:px-16 text-center">
           {/* Purple Ray & Glass Abstract BG */}
           <div className="absolute inset-0 z-0 pointer-events-none">
             <div className="absolute -top-[20%] left-[-20%] md:left-[10%] w-[150%] md:w-[80%] h-[140%] bg-gradient-to-b from-primary/20 via-primary/5 to-transparent -rotate-[15deg] blur-2xl transform-gpu" />
@@ -15,7 +15,7 @@ export default function SupplyChainCTA() {
           </div>
           
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-4 leading-tight">
+            <h2 className="text-3xl md:text-5xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-4 leading-tight">
               Ready to Secure Your Software Supply Chain?
             </h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">

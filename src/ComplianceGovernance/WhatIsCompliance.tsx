@@ -29,7 +29,7 @@ const benefits = [
 
 export default function WhatIsCompliance() {
   return (
-    <section className="relative overflow-hidden bg-white py-32">
+    <section className="relative overflow-hidden bg-white py-10 md:py-16 md:py-32">
       <div className="shield-container">
         <div className="grid gap-20 items-center lg:grid-cols-2">
           {/* Left Content */}
@@ -51,7 +51,7 @@ export default function WhatIsCompliance() {
           >
             <h2
               className="
-                text-4xl
+                text-2xl md:text-4xl
                 md:text-5xl
 
                 font-medium

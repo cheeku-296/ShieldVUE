@@ -7,7 +7,7 @@ import { Button } from "@/Common/UI/Button/Button";
 
 export default function BookDemoHero() {
   return (
-    <section className="relative overflow-hidden bg-white pt-40 pb-32">
+    <section className="relative overflow-hidden bg-white pt-28 md:pt-40 pb-8 md:pb-16 md:pb-32">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -116,7 +116,7 @@ export default function BookDemoHero() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-10 flex flex-row gap-3">
               <Button
                 asChild
                 size="lg"
@@ -163,9 +163,9 @@ export default function BookDemoHero() {
             </div>
 
             {/* Stats */}
-            <div className="mt-16 grid max-w-2xl grid-cols-3 gap-8">
+            <div className="mt-8 md:mt-16 grid max-w-2xl grid-cols-3 gap-8">
               {/* <div>
-                <div className="text-3xl font-bold text-slate-900">
+                <div className="text-xl md:text-3xl font-bold text-slate-900">
                   SBOM
                 </div>
 
@@ -175,7 +175,7 @@ export default function BookDemoHero() {
               </div>
 
               <div>
-                <div className="text-3xl font-bold text-slate-900">
+                <div className="text-xl md:text-3xl font-bold text-slate-900">
                   CBOM
                 </div>
 
@@ -185,7 +185,7 @@ export default function BookDemoHero() {
               </div>
 
               <div>
-                <div className="text-3xl font-bold text-slate-900">
+                <div className="text-xl md:text-3xl font-bold text-slate-900">
                   NIST
                 </div>
 

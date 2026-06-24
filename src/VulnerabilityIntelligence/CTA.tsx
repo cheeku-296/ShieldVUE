@@ -6,7 +6,7 @@ import { Button } from "@/Common/UI/Button/Button";
 
 export default function CTA() {
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-white py-10 md:py-16 md:py-24">
       <div className="shield-container">
         <motion.div
           initial={{

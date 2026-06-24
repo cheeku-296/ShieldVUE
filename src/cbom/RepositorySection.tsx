@@ -38,7 +38,7 @@ const repositoryFeatures = [
 
 export default function RepositorySection() {
   return (
-    <section className="relative overflow-hidden bg-white py-32">
+    <section className="relative overflow-hidden bg-white py-10 md:py-16 md:py-32">
       {/* Background Glow */}
       <div
         className="
@@ -86,7 +86,7 @@ export default function RepositorySection() {
           >
             <h2
               className="
-                text-4xl
+                text-2xl md:text-4xl
                 md:text-5xl
 
                 font-medium

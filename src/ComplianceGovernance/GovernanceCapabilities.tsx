@@ -51,7 +51,7 @@ const capabilities = [
 
 export default function GovernanceCapabilities() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-32">
+    <section className="relative overflow-hidden bg-slate-50 py-10 md:py-16 md:py-32">
       {/* Background Pattern */}
       <div
         className="
@@ -70,7 +70,7 @@ export default function GovernanceCapabilities() {
         <div className="mx-auto max-w-4xl text-center">
           <h2
             className="
-              text-4xl
+              text-2xl md:text-4xl
               md:text-5xl
 
               font-medium
@@ -106,7 +106,7 @@ export default function GovernanceCapabilities() {
         </div>
 
         {/* Capability Grid */}
-        <div className="mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 md:mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {capabilities.map((capability, index) => (
             <motion.div
               key={capability.title}

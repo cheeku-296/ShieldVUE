@@ -5,7 +5,7 @@ import { PlayCircle } from "lucide-react";
 
 export default function PlatformDemo() {
   return (
-    <section className="relative overflow-hidden bg-white py-16">
+    <section className="relative overflow-hidden bg-white py-10 md:py-16">
       {/* Background Pattern */}
       <div
         className="
@@ -43,7 +43,7 @@ export default function PlatformDemo() {
         <div className="mx-auto max-w-3xl text-center">
           <h2
             className="
-              text-4xl
+              text-2xl md:text-4xl
               md:text-5xl
 
               font-medium
@@ -95,7 +95,7 @@ export default function PlatformDemo() {
             relative
 
             mx-auto
-            mt-20
+            mt-10 md:mt-20
 
             max-w-7xl
           "

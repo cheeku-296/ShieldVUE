@@ -29,7 +29,7 @@ const benefits = [
 
 export default function WhatIsSBOM() {
   return (
-    <section className="relative overflow-hidden bg-white py-16">
+    <section className="relative overflow-hidden bg-white py-10 md:py-16">
       <div className="shield-container">
         <div className="grid gap-20 items-center lg:grid-cols-2">
           {/* Left Content */}
@@ -77,7 +77,7 @@ export default function WhatIsSBOM() {
               className="
                 mt-6
 
-                text-4xl
+                text-2xl md:text-4xl
                 md:text-5xl
 
                 font-medium

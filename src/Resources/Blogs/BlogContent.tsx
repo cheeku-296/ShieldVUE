@@ -23,11 +23,11 @@ export default function BlogContent() {
   const currentListedBlogs = remainingBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
 
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-white py-10 md:py-16 md:py-24">
       <div className="shield-container">
         
         {/* Top Section: Latest Intelligence (Left) + Sidebar (Right) */}
-        <div className="grid lg:grid-cols-[1fr_350px] gap-12 lg:gap-16 mb-24">
+        <div className="grid lg:grid-cols-[1fr_350px] gap-12 lg:gap-16 mb-6 md:mb-12 md:mb-24">
           
           {/* LEFT: Latest Intelligence */}
           <div>
@@ -114,10 +114,10 @@ export default function BlogContent() {
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-slate-200 mb-20" />
+        <div className="w-full h-px bg-slate-200 mb-10 md:mb-20" />
 
         {/* Main Blog List Grid */}
-        <div className="mb-16">
+        <div className="mb-8 md:mb-16">
           <h2 className="text-2xl font-bold text-slate-900 font-['Clash_Grotesk'] mb-8">
             All Articles
           </h2>
@@ -158,7 +158,7 @@ export default function BlogContent() {
 
         {/* Pagination */}
         {totalPages > 1 && (
-          <div className="flex items-center justify-center gap-2 mb-24">
+          <div className="flex items-center justify-center gap-2 mb-6 md:mb-12 md:mb-24">
             <button
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
               disabled={currentPage === 1}
@@ -192,7 +192,7 @@ export default function BlogContent() {
         )}
 
         {/* Subscribe CTA */}
-        <div className="relative rounded-xl bg-gradient-to-br from-slate-100/80 to-slate-200/40 backdrop-blur-2xl border border-white/60 shadow-[0_8px_40px_-12px_rgba(0,0,0,0.1)] overflow-hidden py-16 px-6 md:px-16 text-center max-w-5xl mx-auto mt-24">
+        <div className="relative rounded-xl bg-gradient-to-br from-slate-100/80 to-slate-200/40 backdrop-blur-2xl border border-white/60 shadow-[0_8px_40px_-12px_rgba(0,0,0,0.1)] overflow-hidden py-10 md:py-16 px-6 md:px-16 text-center max-w-5xl mx-auto mt-12 md:mt-24">
           {/* Purple Ray & Glass Abstract BG */}
           <div className="absolute inset-0 z-0 pointer-events-none">
             <div className="absolute -top-[20%] left-[-20%] md:left-[10%] w-[150%] md:w-[80%] h-[140%] bg-gradient-to-b from-primary/20 via-primary/5 to-transparent -rotate-[15deg] blur-2xl transform-gpu" />
@@ -201,7 +201,7 @@ export default function BlogContent() {
           </div>
           
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-4 leading-tight">
+            <h2 className="text-2xl md:text-4xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-4 leading-tight">
               Stay Ahead of <span className="text-primary">AI-Powered Testing</span>
             </h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">

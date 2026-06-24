@@ -184,7 +184,7 @@ export default function WhatShieldVUESolves() {
   const activeData = tabs[activeTab].content;
 
   return (
-    <section className="bg-slate-50 py-24 relative">
+    <section className="bg-slate-50 py-12 md:py-24 relative">
       <div className="shield-container relative z-10">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-8">
@@ -198,7 +198,7 @@ export default function WhatShieldVUESolves() {
 
         {/* Navigation */}
         <div 
-          className="sticky z-50 bg-slate-50/90 backdrop-blur-md flex flex-wrap justify-between border-b border-slate-200 mb-12 gap-y-2 transition-[top] duration-300"
+          className="sticky z-50 bg-slate-50/90 backdrop-blur-md flex overflow-x-auto md:justify-between border-b border-slate-200 mb-6 md:mb-12 gap-x-2 transition-[top] duration-300"
           style={{ top: isNavVisible ? '64px' : '0px' }}
         >
           {tabs.map((tab, idx) => {
@@ -208,10 +208,10 @@ export default function WhatShieldVUESolves() {
               <button 
                 key={tab.id}
                 onClick={() => setActiveTab(idx)}
-                className={`flex items-center px-4 py-5 whitespace-nowrap transition-all duration-300 font-medium ${
+                className={`flex items-center px-4 py-4 md:py-5 whitespace-nowrap transition-all duration-300 font-medium flex-shrink-0 ${
                   isActive 
                     ? 'text-primary border-b-2 border-primary' 
-                    : 'text-slate-500 hover:text-slate-900'
+                    : 'text-slate-500 hover:text-slate-900 border-b-2 border-transparent'
                 }`}
               >
                 {tab.name}
@@ -233,18 +233,18 @@ export default function WhatShieldVUESolves() {
             <div className="grid lg:grid-cols-12 gap-16">
               {/* Left side info */}
               <div className="lg:col-span-5">
-                <p className="text-slate-800 mb-12 text-md leading-relaxed">
+                <p className="text-slate-800 mb-6 md:mb-12 text-md leading-relaxed">
                   {activeData.description}
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 mb-12">
+                <div className="flex flex-col sm:flex-row gap-6 sm:gap-16 mb-6 md:mb-12">
                    <div>
-                     <div className="text-4xl font-bold text-slate-900 mb-2">{activeData.metric1}</div>
-                     <div className="text-xs font-semibold text-slate-500 uppercase tracking-[0.2em]">{activeData.metric1Label}</div>
+                     <div className="text-2xl md:text-4xl font-bold text-slate-900 mb-2">{activeData.metric1}</div>
+                     <div className="text-[10px] md:text-xs font-semibold text-slate-500 uppercase tracking-[0.2em]">{activeData.metric1Label}</div>
                    </div>
                    <div>
-                     <div className="text-4xl font-extrabold text-slate-900 mb-2">{activeData.metric2}</div>
-                     <div className="text-xs font-semibold text-slate-500 uppercase tracking-[0.1em]">{activeData.metric2Label}</div>
+                     <div className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-2">{activeData.metric2}</div>
+                     <div className="text-[10px] md:text-xs font-semibold text-slate-500 uppercase tracking-[0.1em]">{activeData.metric2Label}</div>
                    </div>
                 </div>
                 

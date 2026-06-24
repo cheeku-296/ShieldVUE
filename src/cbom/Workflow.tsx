@@ -11,7 +11,7 @@ import {
 
 export default function Workflow() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-32">
+    <section className="relative overflow-hidden bg-slate-50 py-10 md:py-16 md:py-32">
       {/* Background Pattern */}
       <div
         className="
@@ -30,7 +30,7 @@ export default function Workflow() {
         <div className="mx-auto max-w-4xl text-center">
           <h2
             className="
-              text-4xl
+              text-2xl md:text-4xl
               md:text-5xl
 
               font-medium
@@ -84,7 +84,7 @@ export default function Workflow() {
             duration: 0.7,
           }}
           className="
-            mt-16
+            mt-8 md:mt-16
 
             overflow-hidden
 

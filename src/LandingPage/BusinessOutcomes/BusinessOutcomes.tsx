@@ -55,11 +55,11 @@ export default function BusinessOutcomes() {
 
   return (
     <section 
-      className="bg-white py-24 bg-cover bg-center bg-no-repeat"
+      className="bg-white py-12 md:py-24 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/landing/outcome_bg.png')" }}
     >
       <div className="shield-container">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-4">
             Measurable Business Outcomes
           </h2>
@@ -83,7 +83,7 @@ export default function BusinessOutcomes() {
                 {outcome.title}
               </h3> */}
               
-              <div className="relative z-10 text-4xl   font-bold text-primary mb-2">
+              <div className="relative z-10 text-2xl md:text-4xl   font-bold text-primary mb-2">
                 {outcome.metric}
               </div>
               <div className="relative z-10 text-sm font-medium font-['Manrope'] text-slate-500 uppercase tracking-wide mb-4">

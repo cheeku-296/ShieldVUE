@@ -25,7 +25,7 @@ export default function Solutions() {
   ];
 
   return (
-    <section className="bg-slate-50 py-24 border-y border-slate-100">
+    <section className="bg-slate-50 py-12 md:py-24 border-y border-slate-100">
       <div className="shield-container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           

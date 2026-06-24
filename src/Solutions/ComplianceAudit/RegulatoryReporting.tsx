@@ -5,12 +5,12 @@ import { DownloadCloud, FileText } from "lucide-react";
 
 export default function RegulatoryReporting() {
   return (
-    <section className="py-24 bg-white border-y border-slate-100">
+    <section className="py-12 md:py-24 bg-white border-y border-slate-100">
       <div className="shield-container text-center max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-6 leading-[1.1]">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium font-['Clash_Grotesk'] text-slate-900 mb-6 leading-[1.1]">
           1-Click <span className="text-primary">Audit Evidence</span>
         </h2>
-        <p className="text-lg text-slate-600 leading-relaxed mb-12 max-w-2xl mx-auto">
+        <p className="text-lg text-slate-600 leading-relaxed mb-6 md:mb-12 max-w-2xl mx-auto">
           Stop spending weeks preparing for audits. Generate comprehensive, irrefutable proof of your security posture instantly for external auditors.
         </p>
 

@@ -83,7 +83,7 @@ export default function DemoForm() {
   return (
     <section
       id="demo-form"
-      className="relative overflow-hidden bg-slate-50 py-32"
+      className="relative overflow-hidden bg-slate-50 py-10 md:py-16 md:py-32"
     >
       {/* Background Pattern */}
       <div
@@ -154,7 +154,7 @@ export default function DemoForm() {
               className="
                 mt-8
 
-                text-4xl
+                text-2xl md:text-4xl
                 md:text-5xl
 
                 font-medium

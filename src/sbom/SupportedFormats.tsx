@@ -46,7 +46,7 @@ const formats = [
 
 export default function SupportedFormats() {
   return (
-    <section className="relative bg-slate-50 py-16">
+    <section className="relative bg-slate-50 py-10 md:py-16">
       {/* Background Pattern */}
       <div
         className="
@@ -96,7 +96,7 @@ export default function SupportedFormats() {
 
             <h2
               className="
-                text-4xl
+                text-2xl md:text-4xl
                 md:text-5xl
 
                 font-medium

@@ -38,7 +38,7 @@ const features = [
 
 export default function AuditReporting() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-32">
+    <section className="relative overflow-hidden bg-slate-50 py-10 md:py-16 md:py-32">
       {/* Glow */}
       <div
         className="
@@ -86,7 +86,7 @@ export default function AuditReporting() {
           >
             <h2
               className="
-                text-4xl
+                text-2xl md:text-4xl
                 md:text-5xl
 
                 font-medium

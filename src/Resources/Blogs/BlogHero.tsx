@@ -37,7 +37,7 @@ export default function BlogHero() {
   };
 
   return (
-    <section ref={containerRef} className="relative bg-white pt-32 pb-24 md:pb-48 lg:pt-48 lg:pb-64 min-h-[100vh] flex flex-col justify-center overflow-hidden">
+    <section ref={containerRef} className="relative bg-white pt-32 pb-12 md:pb-24 md:pb-48 lg:pt-48 lg:pb-64 min-h-[100vh] flex flex-col justify-center overflow-hidden">
       {/* Background Image with Parallax */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <motion.div
@@ -63,7 +63,7 @@ export default function BlogHero() {
           initial="hidden"
           animate="visible"
         >
-          <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk']">
+          <motion.h1 variants={itemVariants} className="text-4xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk']">
             Insights on <br />
             <span className="text-primary font-medium">Software Quality.</span>
           </motion.h1>
@@ -76,14 +76,14 @@ export default function BlogHero() {
             <Button
               asChild
               size="lg"
-              className="h-11 px-6 rounded-md text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 border-0"
+              className="h-11 flex-1 sm:flex-none px-3 sm:px-6 rounded-md text-xs sm:text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 border-0"
             >
               <Link href="/book-demo">
                 Book Demo
               </Link>
             </Button>
 
-            <Button size="lg" variant="outline" className="h-11 px-6 rounded-md text-sm font-medium border border-slate-200 text-slate-800 bg-white/80 backdrop-blur-md hover:bg-slate-50 flex items-center gap-2 shadow-sm">
+            <Button size="lg" variant="outline" className="h-11 flex-1 sm:flex-none px-3 sm:px-6 rounded-md text-xs sm:text-sm font-medium border border-slate-200 text-slate-800 bg-white/80 backdrop-blur-md hover:bg-slate-50 flex items-center gap-2 shadow-sm">
                <Link href="/overview" className="flex items-center gap-2">
                  Explore Platform
                  <ArrowRight className="h-4 w-4 text-slate-600" />

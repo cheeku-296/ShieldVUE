@@ -17,9 +17,9 @@ export default function ProductScreenshots() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <section className="bg-slate-50 py-24 border-y border-slate-100 overflow-hidden">
+    <section className="bg-slate-50 py-12 md:py-24 border-y border-slate-100 overflow-hidden">
       <div className="shield-container">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-6 md:mb-12">
           <h2 className="text-3xl md:text-5xl font-medium tracking-normal font-['Clash_Grotesk'] text-slate-900 mb-4">
             Total Visibility at Your Fingertips
           </h2>
@@ -29,7 +29,7 @@ export default function ProductScreenshots() {
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-6 md:mb-12">
           {tabs.map((tab) => (
             <button
               key={tab}

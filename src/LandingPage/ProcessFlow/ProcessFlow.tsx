@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function ProcessFlow() {
   return (
-    <section className="bg-white py-24 border-t border-slate-100">
+    <section className="bg-white py-12 md:py-24 border-t border-slate-100">
       <div className="shield-container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           {/* <h2 className="text-sm font-semibold text-primary tracking-wide uppercase mb-3">
             Platform Workflow
           </h2> */}

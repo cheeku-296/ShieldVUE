@@ -82,7 +82,7 @@ export default function FAQs() {
   const currentFaqs = faqsByCategory[activeCategory] || [];
 
   return (
-    <div className="min-h-screen bg-slate-50 py-24 relative overflow-hidden">
+    <div className="min-h-screen bg-slate-50 py-12 md:py-24 relative overflow-hidden">
       {/* Background radial gradient */}
       <div className="absolute top-0 left-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 opacity-70 pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] translate-x-1/3 translate-y-1/3 opacity-70 pointer-events-none" />
@@ -92,13 +92,13 @@ export default function FAQs() {
 
       <div className="shield-container relative z-10">
         {/* Header Section */}
-        <div className="text-center max-w-2xl pt-14 mx-auto mb-16">
+        <div className="text-center max-w-2xl pt-14 mx-auto mb-8 md:mb-16">
           {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
             <div className="w-1.5 h-1.5 rounded-full bg-primary" />
             Frequently Asked Questions
           </div> */}
           
-          <h1 className="text-4xl md:text-5xl font-medium text-slate-900 mb-4 font-['Clash_Grotesk']">
+          <h1 className="text-3xl md:text-5xl font-medium text-slate-900 mb-4 font-['Clash_Grotesk']">
             Got Questions? <br />
             <span className="text-primary">We've Got Answers</span>
           </h1>

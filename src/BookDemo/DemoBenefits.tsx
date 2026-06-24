@@ -38,7 +38,7 @@ const items = [
 
 export default function DemoBenefits() {
   return (
-    <section className="relative overflow-hidden bg-slate-100 py-32">
+    <section className="relative overflow-hidden bg-slate-100 py-10 md:py-16 md:py-32">
       {/* Background Pattern */}
       <div
         className="
@@ -77,7 +77,7 @@ export default function DemoBenefits() {
             className="
               mt-8
 
-              text-4xl
+              text-2xl md:text-4xl
               font-extrabold
 
               tracking-tight
@@ -109,7 +109,7 @@ export default function DemoBenefits() {
         </div>
 
         {/* Cards */}
-        <div className="mt-20 grid gap-6 lg:grid-cols-4">
+        <div className="mt-10 md:mt-20 grid gap-6 lg:grid-cols-4">
           {items.map((item, index) => (
             <motion.div
               key={item.title}

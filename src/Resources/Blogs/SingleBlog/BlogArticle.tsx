@@ -18,9 +18,9 @@ export default function BlogArticle({ id }: BlogArticleProps) {
   }
 
   return (
-    <article className="bg-white min-h-screen pb-24">
+    <article className="bg-white min-h-screen pb-12 md:pb-24">
       {/* Hero Section */}
-      <section className="relative w-full pt-32 pb-24 flex items-center min-h-[65vh] overflow-hidden border-b border-slate-100 bg-gradient-to-r from-primary/10 via-primary/5 to-white">
+      <section className="relative w-full pt-32 pb-12 md:pb-24 flex items-center min-h-[65vh] overflow-hidden border-b border-slate-100 bg-gradient-to-r from-primary/10 via-primary/5 to-white">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -36,8 +36,8 @@ export default function BlogArticle({ id }: BlogArticleProps) {
 
         {/* Hero Content */}
         <div className="relative z-10 w-full max-w-5xl mx-auto px-6 lg:px-8">
-          <Link 
-            href="/resources/blogs" 
+          <Link
+            href="/resources/blogs"
             className="inline-flex items-center text-sm font-medium text-slate-500 hover:text-primary transition-colors mb-10 font-['Inter']"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
@@ -50,7 +50,7 @@ export default function BlogArticle({ id }: BlogArticleProps) {
             <span>{blog.readTime}</span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-medium font-['Clash_Grotesk'] leading-[1.1] tracking-[-0.02em] mb-12 w-full md:max-w-[60%] lg:max-w-[55%] text-slate-900">
+          <h1 className="text-3xl md:text-5xl lg:text-[4rem] font-medium font-['Clash_Grotesk'] leading-[1.1] tracking-[-0.02em] mb-6 md:mb-12 w-full md:max-w-[60%] lg:max-w-[55%] text-slate-900">
             {blog.title.split(' ').slice(0, -1).join(' ')}{' '}
             <span className="text-primary">{blog.title.split(' ').pop()}</span>
           </h1>
@@ -68,32 +68,32 @@ export default function BlogArticle({ id }: BlogArticleProps) {
       </section>
 
       {/* Content Section */}
-      <div className="max-w-3xl mx-auto px-6 lg:px-8 pt-20">
-        
+      <div className="max-w-4xl mx-auto px-6 lg:px-8 pt-20">
+
         {/* Intro / Description with Left Border */}
-        <div className="pl-6 border-l-[3px] border-[#8B5CF6] mb-16">
-          <p className="text-xl md:text-xl text-slate-700 font-['Inter'] leading-relaxed">
+        <div className="pl-6 border-l-[3px] border-[#8B5CF6] mb-8 md:mb-16">
+          <p className="text-lg text-slate-700 font-['Inter'] leading-relaxed">
             {blog.description}
           </p>
         </div>
 
         {/* Body Content */}
-        <div className="max-w-none text-slate-700 font-['Manrope'] leading-loose space-y-6 text-lg">
+        <div className="max-w-none text-slate-700 font-['Manrope'] leading-loose space-y-6 text-base">
           {blog.content ? (
-             blog.content.split("\n\n").map((rawParagraph, idx) => {
+            blog.content.split("\n\n").map((rawParagraph, idx) => {
               const paragraph = rawParagraph.trim();
               if (!paragraph) return null;
 
               if (paragraph.startsWith("## ")) {
                 return (
-                  <h2 key={idx} className="text-2xl md:text-3xl font-semibold text-slate-900 mt-12 mb-6 leading-snug">
+                  <h2 key={idx} className="text-xl md:text-2xl font-semibold text-slate-900 mt-12 mb-6 leading-snug">
                     {paragraph.replace("## ", "")}
                   </h2>
                 );
               }
               if (paragraph.startsWith("> ")) {
                 return (
-                  <blockquote key={idx} className="border-l-4 border-primary pl-6 py-1 my-10 text-[20px] md:text-[22px] leading-relaxed text-slate-700 font-normal">
+                  <blockquote key={idx} className="border-l-4 border-primary pl-6 py-1 my-10 text-lg md:text-lg leading-relaxed text-slate-700 font-normal">
                     {paragraph.replace("> ", "")}
                   </blockquote>
                 );
@@ -104,13 +104,13 @@ export default function BlogArticle({ id }: BlogArticleProps) {
                     {paragraph.split('\n').map((item, i) => {
                       const cleanItem = item.trim();
                       if (!cleanItem) return null;
-                      return <li key={i} className="text-slate-700 leading-relaxed text-lg">{cleanItem.replace("- ", "")}</li>;
+                      return <li key={i} className="text-slate-700 leading-relaxed text-base">{cleanItem.replace("- ", "")}</li>;
                     })}
                   </ul>
                 );
               }
               return (
-                <p key={idx} className="text-lg leading-[1.8] text-slate-700 mb-8 font-normal font-['Inter']">
+                <p key={idx} className="text-base leading-[1.8] text-slate-700 mb-8 font-normal font-['Inter']">
                   {paragraph}
                 </p>
               );
@@ -121,13 +121,13 @@ export default function BlogArticle({ id }: BlogArticleProps) {
         </div>
 
         {/* Tags / Footer */}
-        <footer className="mt-24 pt-8 border-t border-slate-100">
+        <footer className="mt-12 md:mt-24 pt-8 border-t border-slate-100">
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div className="flex gap-2 font-['Manrope']">
-               <span className="px-4 py-2 bg-slate-50 rounded-lg text-xs font-bold text-slate-600 tracking-wide uppercase">#{blog.category.replace(/\s+/g, '')}</span>
-               <span className="px-4 py-2 bg-slate-50 rounded-lg text-xs font-bold text-slate-600 tracking-wide uppercase">#QualityEngineering</span>
+              <span className="px-4 py-2 bg-slate-50 rounded-lg text-xs font-bold text-slate-600 tracking-wide uppercase">#{blog.category.replace(/\s+/g, '')}</span>
+              <span className="px-4 py-2 bg-slate-50 rounded-lg text-xs font-bold text-slate-600 tracking-wide uppercase">#QualityEngineering</span>
             </div>
-            
+
             <button className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-bold text-primary bg-primary/5 hover:bg-primary/10 transition-colors font-['Inter']">
               <Share2 className="w-4 h-4 mr-2" />
               Share Article
