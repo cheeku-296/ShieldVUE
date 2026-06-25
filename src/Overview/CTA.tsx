@@ -127,7 +127,7 @@ export default function CTA() {
                   hover:bg-slate-50
                 "
               >
-                <Link href="/contact" className="flex items-center gap-2">
+                <Link href="/contact-us" className="flex items-center gap-2">
                   Contact Sales <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>

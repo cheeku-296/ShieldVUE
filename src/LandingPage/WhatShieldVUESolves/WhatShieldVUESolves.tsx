@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { Shield, Zap, Cloud, Lock, FileCheck, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function WhatShieldVUESolves() {
   const [activeTab, setActiveTab] = useState(0);
@@ -20,6 +21,7 @@ export default function WhatShieldVUESolves() {
         metric2: "Zero",
         metric2Label: "BLIND SPOTS",
         cta: "Explore SBOM Management",
+        link: "/platform/sbom-management",
         cards: [
           {
             title: "Automated Generation",
@@ -44,13 +46,14 @@ export default function WhatShieldVUESolves() {
       id: 1,
       name: "Vulnerability Intelligence",
       content: {
-        title: "REAL-TIME VULNERABILITY INTELLIGENCE",
+        title: "VULNERABILITY INTELLIGENCE",
         description: "Correlate discovered open-source components against global vulnerability databases (NVD) in real-time. Instantly pinpoint active risks and affected applications across direct and transitive dependencies when a new CVE emerges.",
         metric1: "Real-Time",
         metric1Label: "THREAT MONITORING",
         metric2: "Fast",
         metric2Label: "IMPACT ANALYSIS",
         cta: "Explore Vulnerability Intelligence",
+        link: "/platform/vulnerability-intelligence",
         cards: [
           {
             title: "CVE Mapping",
@@ -75,13 +78,14 @@ export default function WhatShieldVUESolves() {
       id: 2,
       name: "Inventory Management",
       content: {
-        title: "GLOBAL INVENTORY MANAGEMENT",
+        title: "INVENTORY MANAGEMENT",
         description: "Maintain a centralized inventory of all applications and components. Gain global visibility across all teams and environments to monitor open-source usage, enforce license compliance, and detect orphaned components.",
         metric1: "Global",
         metric1Label: "VISIBILITY",
         metric2: "100%",
         metric2Label: "ASSET TRACKING",
         cta: "Explore Inventory Management",
+        link: "",
         cards: [
           {
             title: "Application Inventory",
@@ -106,13 +110,14 @@ export default function WhatShieldVUESolves() {
       id: 3,
       name: "Version Comparison",
       content: {
-        title: "VERSION COMPARISON & DRIFT",
+        title: "VERSION COMPARISON",
         description: "Compare software versions and vulnerabilities across projects. Track component additions, removals, and upgrades to ensure full software composition traceability and secure release governance.",
         metric1: "Track",
         metric1Label: "COMPONENT DRIFT",
         metric2: "Secure",
         metric2Label: "RELEASE GOVERNANCE",
         cta: "Explore Version Comparison",
+        link: "",
         cards: [
           {
             title: "Compare Releases",
@@ -137,13 +142,14 @@ export default function WhatShieldVUESolves() {
       id: 4,
       name: "Access & Configuration",
       content: {
-        title: "ACCESS & CONFIGURATION MANAGEMENT",
+        title: "ACCESS & CONFIGURATION",
         description: "Enforce strict security controls with Role-Based Access Control (RBAC) and centralized agent visibility. Maintain comprehensive audit logs to ensure your DevSecOps pipeline remains secure and compliant.",
         metric1: "RBAC",
         metric1Label: "STRICT CONTROLS",
         metric2: "Audit",
         metric2Label: "COMPLIANCE READY",
         cta: "Explore Access Management",
+        link: "",
         cards: [
           {
             title: "User Management",
@@ -197,22 +203,21 @@ export default function WhatShieldVUESolves() {
         </div>
 
         {/* Navigation */}
-        <div 
+        <div
           className="sticky z-50 bg-slate-50/90 backdrop-blur-md flex overflow-x-auto md:justify-between border-b border-slate-200 mb-6 md:mb-12 gap-x-2 transition-[top] duration-300"
           style={{ top: isNavVisible ? '64px' : '0px' }}
         >
           {tabs.map((tab, idx) => {
             const isActive = activeTab === idx;
-            
+
             return (
-              <button 
+              <button
                 key={tab.id}
                 onClick={() => setActiveTab(idx)}
-                className={`flex items-center px-4 py-4 md:py-5 whitespace-nowrap transition-all duration-300 font-medium flex-shrink-0 ${
-                  isActive 
-                    ? 'text-primary border-b-2 border-primary' 
-                    : 'text-slate-500 hover:text-slate-900 border-b-2 border-transparent'
-                }`}
+                className={`flex items-center px-4 py-4 md:py-5 whitespace-nowrap transition-all duration-300 font-medium flex-shrink-0 ${isActive
+                  ? 'text-primary border-b-2 border-primary'
+                  : 'text-slate-500 hover:text-slate-900 border-b-2 border-transparent'
+                  }`}
               >
                 {tab.name}
               </button>
@@ -222,37 +227,33 @@ export default function WhatShieldVUESolves() {
 
         {/* Content Section Container (Single View with Slide Animation) */}
         <div className="overflow-hidden w-full relative min-h-[500px]">
-          <div 
-            key={activeTab} 
+          <div
+            key={activeTab}
             className="animate-in slide-in-from-right-16 fade-in duration-500 fill-mode-forwards"
           >
-            <h2 className="text-2xl md:text-5xl font-normal font-['Clash_Grotesk'] text-primary mb-8">
-              {activeData.title}
-            </h2>
-
             <div className="grid lg:grid-cols-12 gap-16">
               {/* Left side info */}
               <div className="lg:col-span-5">
+                <h2 className="text-2xl md:text-5xl font-normal font-['Clash_Grotesk'] text-primary mb-8 mt-0 pt-0">
+                  {activeData.title}
+                </h2>
                 <p className="text-slate-800 mb-6 md:mb-12 text-md leading-relaxed">
                   {activeData.description}
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-6 sm:gap-16 mb-6 md:mb-12">
-                   <div>
-                     <div className="text-2xl md:text-4xl font-bold text-slate-900 mb-2">{activeData.metric1}</div>
-                     <div className="text-[10px] md:text-xs font-semibold text-slate-500 uppercase tracking-[0.2em]">{activeData.metric1Label}</div>
-                   </div>
-                   <div>
-                     <div className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-2">{activeData.metric2}</div>
-                     <div className="text-[10px] md:text-xs font-semibold text-slate-500 uppercase tracking-[0.1em]">{activeData.metric2Label}</div>
-                   </div>
+                  <div>
+                    <div className="text-2xl md:text-4xl font-bold text-slate-900 mb-2">{activeData.metric1}</div>
+                    <div className="text-[10px] md:text-xs font-semibold text-slate-500 uppercase tracking-[0.2em]">{activeData.metric1Label}</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-2">{activeData.metric2}</div>
+                    <div className="text-[10px] md:text-xs font-semibold text-slate-500 uppercase tracking-[0.1em]">{activeData.metric2Label}</div>
+                  </div>
                 </div>
-                
-                <button className="bg-primary text-white font-normal py-4 px-8 rounded-md flex items-center gap-3 hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">
-                  {activeData.cta} <ArrowRight className="w-5 h-5" />
-                </button>
+
+
               </div>
-              
               {/* Right side cards grid */}
               <div className="lg:col-span-7 grid sm:grid-cols-2 gap-6 relative">
                 <div className="absolute inset-0 -z-10 opacity-10 pointer-events-none overflow-hidden">

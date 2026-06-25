@@ -17,7 +17,7 @@ export default function OpenSourceCaseStudies() {
             "ShieldVUE gave us immediate visibility into our sprawling open-source estate, reducing our compliance review time by 80%."
           </p>
           <div className="text-white/80 font-bold uppercase tracking-widest text-sm bg-white/10 inline-block px-4 py-2 rounded-full">
-            — Leading Fintech Provider
+            — Tech Leader
           </div>
         </motion.div>
       </div>

@@ -26,7 +26,7 @@ export default function ComplianceCTA() {
                 <Link href="/contact-us">Book Demo</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-white border-slate-200 text-slate-700 hover:bg-slate-50 rounded-md font-medium px-8 h-12 flex items-center gap-2 shadow-sm">
-                <Link href="/contact">
+                <Link href="/contact-us">
                   Contact Sales <ArrowRight className="w-4 h-4 text-slate-400" />
                 </Link>
               </Button>
