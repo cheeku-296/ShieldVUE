@@ -59,7 +59,7 @@ export default function ProductScreenshots() {
                 <div className="w-3 h-3 rounded-md bg-red-400" />
                 <div className="w-3 h-3 rounded-md bg-amber-400" />
                 <div className="w-3 h-3 rounded-md bg-green-400" />
-                <div className="ml-4 text-xs font-medium text-slate-400">ShieldVUE Enterprise • {activeTab.name}</div>
+                <div className="ml-4 text-xs font-medium text-slate-600">ShieldVUE Enterprise • {activeTab.name}</div>
               </div>
               
               {/* Image */}

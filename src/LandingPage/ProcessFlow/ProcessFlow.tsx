@@ -8,9 +8,9 @@ export default function ProcessFlow() {
           {/* <h2 className="text-sm font-semibold text-primary tracking-wide uppercase mb-3">
             Platform Workflow
           </h2> */}
-          <h3 className="text-3xl md:text-5xl font-medium text-slate-900 tracking-normal font-['Clash_Grotesk']">
+          <h2 className="text-3xl md:text-5xl font-medium text-slate-900 tracking-normal font-['Clash_Grotesk']">
             How ShieldVUE Secures Your Ecosystem
-          </h3>
+          </h2>
           <p className="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">
             A frictionless pipeline that integrates seamlessly into your existing CI/CD environments to secure your software from code to production.
           </p>

@@ -67,7 +67,6 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
 };
 
 import Navbar from "@/Common/NavBar/NavBar";
@@ -88,7 +87,7 @@ export default function RootLayout({
     >
       <head>
         <link rel="preconnect" href="https://api.fontshare.com" />
-        <link rel="preconnect" href="https://cdn.fontshare.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://cdn.fontshare.com" />
         <link
           href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@200,300,400,500,600&display=swap"
           rel="stylesheet"

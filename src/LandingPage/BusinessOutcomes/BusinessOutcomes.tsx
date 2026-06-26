@@ -87,7 +87,7 @@ export default function BusinessOutcomes() {
               <div className="relative z-10 text-2xl md:text-4xl   font-bold text-primary mb-2">
                 {outcome.metric}
               </div>
-              <div className="relative z-10 text-sm font-medium font-['Manrope'] text-slate-500 uppercase tracking-wide mb-4">
+              <div className="relative z-10 text-sm font-medium font-['Manrope'] text-slate-700 uppercase tracking-wide mb-4">
                 {outcome.label}
               </div>
               <p className="relative z-10 text-slate-600 text-sm leading-relaxed">

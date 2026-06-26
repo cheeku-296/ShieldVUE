@@ -269,7 +269,7 @@ export default function WhatShieldVUESolves() {
                     <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-[60px] group-hover:bg-primary/30 transition-all duration-500 pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
 
                     <div className="relative z-10">
-                      <h4 className="text-xl font-normal text-slate-40 mb-2 font-['Manrope']">{card.title}</h4>
+                      <h3 className="text-xl font-normal text-slate-900 mb-2 font-['Manrope']">{card.title}</h3>
                       <p className="text-sm text-slate-600 leading-relaxed font-normal">{card.description}</p>
                     </div>
                   </div>

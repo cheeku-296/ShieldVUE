@@ -53,6 +53,7 @@ export default function Hero() {
             alt="Abstract Software Supply Chain Visualization"
             fill
             sizes="100vw"
+            quality={60}
             className="object-cover object-right"
             priority
           />
@@ -64,24 +65,19 @@ export default function Hero() {
       <div className="shield-container relative z-10 w-full">
         <div className="grid items-center gap-16 lg:grid-cols-12">
           {/* Left Content */}
-          <m.div
-            className="max-w-2xl lg:max-w-none lg:col-span-7 xl:col-span-8"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-          >
+          <div className="max-w-2xl lg:max-w-none lg:col-span-7 xl:col-span-8">
             {/* Eyebrow */}
 
-            <m.h1 variants={itemVariants} className="text-4xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk']">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-[-0.02em] text-slate-900 font-['Clash_Grotesk'] animate-in fade-in slide-in-from-bottom-4 duration-700">
               <span className="md:whitespace-nowrap">Know Your Software</span> <br />
               <span className="text-primary font-medium md:whitespace-nowrap">Supply Chain.</span>
-            </m.h1>
+            </h1>
 
-            <m.p variants={itemVariants} className="mt-6 text-lg sm:text-lg leading-8 text-slate-600">
+            <p className="mt-6 text-lg sm:text-lg leading-8 text-slate-600 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150 fill-mode-forwards opacity-0">
               Gain complete visibility into software components, vulnerabilities, cryptographic assets, and compliance risks through a unified Software Bill of Materials (SBOM) and Cybersecurity Governance Platform.
-            </m.p>
+            </p>
 
-            <m.div variants={itemVariants} className="mt-10 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+            <m.div variants={itemVariants} initial="hidden" animate="visible" className="mt-10 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
               <Button
                 asChild
                 size="lg"
@@ -99,7 +95,7 @@ export default function Hero() {
                  </Link>
               </Button>
             </m.div>
-          </m.div>
+          </div>
 
           {/* Right Product Preview with Parallax */}
           <m.div
@@ -122,7 +118,7 @@ export default function Hero() {
           {/* Card 1: Primary Color */}
           <div className="flex flex-col justify-between items-start bg-gradient-to-br from-primary/60 to-primary/40 backdrop-blur-3xl border border-white/20 rounded-lg p-8 min-h-[220px] shadow-[0_8px_32px_rgba(0,0,0,0.15)] text-white transform transition-all duration-300 md:hover:-translate-y-2">
             <div>
-              <h3 className="text-xl font-medium mb-2">Automated SBOM Generation</h3>
+              <h2 className="text-xl font-medium mb-2">Automated SBOM Generation</h2>
               <p className="text-sm leading-relaxed text-white/90">Automatically generate standardized SBOMs directly from source code and CI/CD pipelines.</p>
             </div>
             <a href="#" className="text-sm font-medium mt-4 hover:underline flex items-center gap-1">Learn More <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" /></a>
@@ -130,7 +126,7 @@ export default function Hero() {
           {/* Card 2: White Color */}
           <div className="flex flex-col justify-between items-start bg-white/50 backdrop-blur-2xl border border-white/60 rounded-lg p-8 min-h-[220px] shadow-[0_8px_32px_rgba(0,0,0,0.1)] text-slate-800 transform transition-all duration-300 md:hover:-translate-y-2 hover:bg-white/60">
             <div>
-              <h3 className="text-xl font-medium mb-2">Continuous Vulnerability Mapping</h3>
+              <h2 className="text-xl font-medium mb-2">Continuous Vulnerability Mapping</h2>
               <p className="text-sm leading-relaxed text-slate-700">Correlate components against global vulnerability databases to highlight active risks in real-time.</p>
             </div>
             <a href="#" className="text-sm font-medium mt-4 text-primary hover:underline flex items-center gap-1">View Features <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" /></a>
@@ -138,7 +134,7 @@ export default function Hero() {
           {/* Card 3: White Color */}
           <div className="flex flex-col justify-between items-start bg-white/50 backdrop-blur-2xl border border-white/60 rounded-lg p-8 min-h-[220px] shadow-[0_8px_32px_rgba(0,0,0,0.1)] text-slate-800 transform transition-all duration-300 md:hover:-translate-y-2 hover:bg-white/60">
             <div>
-              <h3 className="text-xl font-medium mb-2">Compliance Ready</h3>
+              <h2 className="text-xl font-medium mb-2">Compliance Ready</h2>
               <p className="text-sm leading-relaxed text-slate-700">Meet regulatory requirements instantly with audit-ready reporting and strict governance.</p>
             </div>
             <a href="#" className="text-sm font-semibold mt-4 text-primary hover:underline flex items-center gap-1">Discover Options <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" /></a>
