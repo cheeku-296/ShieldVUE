@@ -208,6 +208,8 @@ export default function DemoForm() {
                         <input
                           required
                           placeholder="Enter your designation"
+                          pattern="^[^0-9]+$"
+                          title="Designation must not contain numbers"
                           value={formData.designation}
                           onChange={(e) => setFormData({ ...formData, designation: e.target.value })}
                           className="w-full bg-white/40 backdrop-blur-sm text-sm border border-primary/20 rounded-md px-4 py-2.5 outline-none focus:ring-2 focus:ring-primary/40 focus:bg-white/60 transition-all placeholder:text-slate-400"
