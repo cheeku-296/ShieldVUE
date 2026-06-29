@@ -7,6 +7,7 @@ const ProductScreenshots = dynamic(() => import("@/LandingPage/ProductScreenshot
 const ProcessFlow = dynamic(() => import("@/LandingPage/ProcessFlow/ProcessFlow"));
 const SbomCbom = dynamic(() => import("@/LandingPage/SbomCbom/SbomCbom"));
 const PlatformCapabilities = dynamic(() => import("@/LandingPage/PlatformCapabilities/PlatformCapabilities"));
+const AgenticRemediation = dynamic(() => import("@/LandingPage/AgenticRemediation/AgenticRemediation"));
 const WhatShieldVUESolves = dynamic(() => import("@/LandingPage/WhatShieldVUESolves/WhatShieldVUESolves"));
 const BusinessOutcomes = dynamic(() => import("@/LandingPage/BusinessOutcomes/BusinessOutcomes"));
 const Industries = dynamic(() => import("@/LandingPage/Industries/Industries"));
@@ -23,6 +24,7 @@ export default function Home() {
         <ProcessFlow />
         <SbomCbom />
         <PlatformCapabilities />
+        <AgenticRemediation />
         {/* <Solutions /> */}
         <WhatShieldVUESolves />
         <BusinessOutcomes />
