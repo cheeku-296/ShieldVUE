@@ -214,7 +214,7 @@ export default function AuditReporting() {
               "
             >
               <Image
-                src="/images/ui_illustration_2.png"
+                src="/images/compliance.png"
                 alt="ShieldVUE Compliance Dashboard"
                 width={1400}
                 height={900}

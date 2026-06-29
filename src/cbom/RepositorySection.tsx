@@ -216,7 +216,7 @@ export default function RepositorySection() {
               "
             >
               <Image
-                src="/images/cbom-repository.png"
+                src="/images/cbom-dashboard1.png"
                 alt="ShieldVUE CBOM Repository Dashboard"
                 width={1400}
                 height={900}
