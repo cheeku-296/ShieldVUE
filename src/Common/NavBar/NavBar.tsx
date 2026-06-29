@@ -14,6 +14,7 @@ export default function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeMobileDropdown, setActiveMobileDropdown] = useState<string | null>(null);
+  const [activeDesktopDropdown, setActiveDesktopDropdown] = useState<string | null>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -44,6 +45,15 @@ export default function Navbar() {
     }
   }, [isMobileMenuOpen]);
 
+  // Close desktop dropdown on click outside
+  useEffect(() => {
+    const handleClickOutside = () => {
+      setActiveDesktopDropdown(null);
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
   return (
     <header className={`fixed top-0 left-0 right-0 w-full z-50 border-b border-slate-200 bg-white shadow-sm transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"}`}>
       <div className="shield-container flex h-16 items-center justify-between">
@@ -72,8 +82,17 @@ export default function Navbar() {
           {navigation.map((group) => {
             const isActiveGroup = pathname && group.items.some((item) => pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href)));
             return (
-            <div key={group.title} className="group relative py-5">
+            <div 
+              key={group.title} 
+              className="group relative py-5"
+              onMouseEnter={() => setActiveDesktopDropdown(group.title)}
+              onMouseLeave={() => setActiveDesktopDropdown(null)}
+            >
               <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveDesktopDropdown(activeDesktopDropdown === group.title ? null : group.title);
+                }}
                 className={`
                   flex
                   items-center
@@ -81,16 +100,16 @@ export default function Navbar() {
                   text-sm
                   font-medium
                   transition-colors
-                  group-hover:text-primary
-                  ${isActiveGroup ? 'text-primary' : 'text-slate-600'}
+                  hover:text-primary
+                  ${isActiveGroup || activeDesktopDropdown === group.title ? 'text-primary' : 'text-slate-600'}
                 `}
               >
                 {group.title}
-                <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:-rotate-180" />
+                <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${activeDesktopDropdown === group.title ? '-rotate-180' : ''}`} />
               </button>
 
-              {/* Dropdown Wrapper (invisible bridge for hover) */}
-              <div className="absolute left-0 top-full pt-1 invisible opacity-0 translate-y-2 transition-all duration-300 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 before:absolute before:-top-4 before:left-0 before:w-full before:h-4">
+              {/* Dropdown Wrapper */}
+              <div className={`absolute left-0 top-full pt-1 transition-all duration-300 before:absolute before:-top-4 before:left-0 before:w-full before:h-4 ${activeDesktopDropdown === group.title ? 'visible opacity-100 translate-y-0' : 'invisible opacity-0 translate-y-2'}`}>
                 <div
                   className="
                     w-72
