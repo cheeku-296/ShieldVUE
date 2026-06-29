@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Workflow() {
   return (
-    <section className="relative overflow-hidden bg-white py-10 md:py-16 md:py-32">
+    <section className="relative overflow-hidden bg-white py-10 md:py-16 ">
       {/* Background Pattern */}
       <div
         className="
@@ -92,7 +92,7 @@ export default function Workflow() {
           "
         >
           <Image
-            src="/images/ui_illustration_1.png"
+            src="/images/compliance&governance.png"
             alt="ShieldVUE Compliance Governance Workflow"
             width={1600}
             height={900}

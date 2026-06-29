@@ -51,7 +51,7 @@ const capabilities = [
 
 export default function GovernanceCapabilities() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-10 md:py-16 md:py-32">
+    <section className="relative overflow-hidden bg-slate-50 py-10 md:py-16 ">
       {/* Background Pattern */}
       <div
         className="

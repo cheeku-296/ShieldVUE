@@ -11,7 +11,7 @@ import {
 
 export default function Workflow() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-10 md:py-16 md:py-32">
+    <section className="relative overflow-hidden bg-slate-50 py-10 md:py-16">
       {/* Background Pattern */}
       <div
         className="
@@ -99,7 +99,7 @@ export default function Workflow() {
           "
         >
           <Image
-            src="/images/cbom-workflow.png"
+            src="/images/CBOM-workflow.png"
             alt="ShieldVUE CBOM Workflow"
             width={1600}
             height={900}

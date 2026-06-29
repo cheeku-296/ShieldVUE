@@ -89,35 +89,7 @@ export default function Workflow() {
           "
                 >
                     {/* Workflow Image */}
-                    <m.div
-                        initial={{
-                            opacity: 0,
-                            y: 40,
-                        }}
-                        whileInView={{
-                            opacity: 1,
-                            y: 0,
-                        }}
-                        viewport={{
-                            once: true,
-                        }}
-                        transition={{
-                            duration: 0.7,
-                        }}
-                        className="
 
-    overflow-hidden
-
-    rounded-md
-
-    border
-    border-slate-200
-
-    bg-white
-
-    shadow-[0_25px_80px_rgba(15,23,42,0.08)]
-  "
-                    >
                         <Image
                             src="/images/sbom-workflow2.png"
                             alt="ShieldVUE SBOM Workflow"
@@ -131,7 +103,7 @@ export default function Workflow() {
     "
                         />
                     </m.div>
-                </m.div>
+                
 
                 {/* Benefits
                 <div

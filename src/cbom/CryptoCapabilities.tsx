@@ -15,7 +15,7 @@ const capabilities = [
     icon: KeyRound,
     title: "Algorithm Discovery",
     description:
-      "Automatically identify cryptographic algorithms used across applications, libraries, containers, and infrastructure.",
+      "Automatically identify cryptographic algorithms across applications, libraries, containers, and infrastructure. Gain complete visibility into modern, legacy, and custom cryptographic implementations.",
     className: "lg:col-span-2",
   },
   {
@@ -36,7 +36,7 @@ const capabilities = [
     icon: Network,
     title: "Protocol Detection",
     description:
-      "Discover cryptographic protocols and communication dependencies.",
+      "Discover communication protocols and cryptographic dependencies throughout your software ecosystem. Build a complete view of how data is protected across applications and services.",
     className: "lg:col-span-2",
   },
   {
@@ -57,7 +57,7 @@ const capabilities = [
 
 export default function CryptoCapabilities() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-10 md:py-16 md:py-32">
+    <section className="relative overflow-hidden bg-slate-50 py-10 md:py-6">
       {/* Background Pattern */}
       <div
         className="

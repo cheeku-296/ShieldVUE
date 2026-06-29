@@ -38,7 +38,7 @@ const features = [
 
 export default function AuditReporting() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-10 md:py-16 md:py-32">
+    <section className="relative overflow-hidden bg-slate-50 py-10 md:py-16">
       {/* Glow */}
       <div
         className="

@@ -16,12 +16,12 @@ const repositoryFeatures = [
     description:
       "Maintain a single source of truth for cryptographic assets, algorithms, certificates, and keys across the enterprise.",
   },
-  {
-    icon: GitBranch,
-    title: "Version Tracking",
-    description:
-      "Track cryptographic changes across releases and maintain historical records for governance and auditing.",
-  },
+  // {
+  //   icon: GitBranch,
+  //   title: "Version Tracking",
+  //   description:
+  //     "Track cryptographic changes across releases and maintain historical records for governance and auditing.",
+  // },
   {
     icon: Search,
     title: "Searchable Crypto Inventory",

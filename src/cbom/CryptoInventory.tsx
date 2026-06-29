@@ -38,7 +38,7 @@ const inventoryFeatures = [
 
 export default function CryptoInventory() {
   return (
-    <section className="relative overflow-hidden bg-white py-10 md:py-16 md:py-32">
+    <section className="relative overflow-hidden bg-white py-10 md:py-10">
       {/* Background Glow */}
       <div
         className="
