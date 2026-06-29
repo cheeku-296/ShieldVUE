@@ -199,32 +199,25 @@ to-transparent
                         </Button>
 
                         <Button
-                            asChild
+                            onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
                             size="lg"
                             variant="outline"
                             className="
                 h-11
                 px-6
-
                 rounded-md
-
                 border
                 border-slate-200
-
                 bg-white/90
                 backdrop-blur-md
-
                 hover:bg-white
-
                 flex
                 items-center
                 gap-2
               "
                         >
-                            <Link href="/platform/overview">
                                 Explore Platform
                                 <ArrowRight className="h-4 w-4" />
-                            </Link>
                         </Button>
                     </m.div>
 

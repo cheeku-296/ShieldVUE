@@ -8,6 +8,7 @@ import {
   ClipboardCheck,
   ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 
 const items = [
   {
@@ -15,24 +16,28 @@ const items = [
     title: "SBOM Visibility",
     description:
       "Understand every software component, dependency and package powering your applications.",
+    href: "/platform/sbom-management",
   },
   {
     icon: KeyRound,
     title: "CBOM Discovery",
     description:
       "Inventory cryptographic assets, certificates and algorithms across environments.",
+    href: "/platform/cbom-management",
   },
   {
     icon: ShieldCheck,
     title: "Risk Intelligence",
     description:
       "Identify vulnerable components and prioritize remediation efforts with confidence.",
+    href: "/platform/vulnerability-intelligence",
   },
   {
     icon: ClipboardCheck,
     title: "Compliance Readiness",
     description:
       "Prepare for audits with automated reporting and software supply chain governance.",
+    href: "/platform/compliance-governance",
   },
 ];
 
@@ -226,31 +231,26 @@ export default function DemoBenefits() {
                   {item.description}
                 </p>
 
-                <div
+                <Link
+                  href={item.href}
                   className="
                     mt-8
-
                     flex
                     items-center
                     gap-2
-
                     text-sm
                     font-semibold
-
                     text-primary
-
                     opacity-0
-
                     transition-all
                     duration-300
-
                     group-hover:opacity-100
                     group-hover:translate-x-1
                   "
                 >
                   Learn More
                   <ArrowRight className="h-4 w-4" />
-                </div>
+                </Link>
               </div>
             </m.div>
           ))}

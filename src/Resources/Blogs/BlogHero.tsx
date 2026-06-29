@@ -83,11 +83,9 @@ export default function BlogHero() {
               </Link>
             </Button>
 
-            <Button asChild size="lg" variant="outline" className="w-full sm:w-auto h-11 px-6 rounded-md text-sm font-medium border border-slate-200 text-slate-800 bg-white/80 backdrop-blur-md hover:bg-slate-50 shadow-sm">
-               <Link href="/overview" className="flex items-center justify-center gap-2 whitespace-nowrap w-full sm:w-auto">
+            <Button onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })} size="lg" variant="outline" className="flex items-center justify-center gap-2 whitespace-nowrap w-full sm:w-auto h-11 px-6 rounded-md text-sm font-medium border border-slate-200 text-slate-800 bg-white/80 backdrop-blur-md hover:bg-slate-50 shadow-sm">
                  Explore Platform
                  <ArrowRight className="h-4 w-4 text-slate-600" />
-               </Link>
             </Button>
           </m.div>
         </m.div>

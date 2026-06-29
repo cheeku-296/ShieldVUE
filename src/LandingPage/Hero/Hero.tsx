@@ -88,11 +88,9 @@ export default function Hero() {
                 </Link>
               </Button>
 
-              <Button asChild size="lg" variant="outline" className="w-full sm:w-auto h-11 px-6 rounded-md text-sm font-medium border border-slate-200 text-slate-800 bg-white/50 backdrop-blur-md hover:bg-white/80 shadow-sm">
-                 <Link href="/platform/overview" className="flex items-center justify-center gap-2 whitespace-nowrap w-full sm:w-auto">
+              <Button onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })} size="lg" variant="outline" className="flex items-center justify-center gap-2 whitespace-nowrap w-full sm:w-auto h-11 px-6 rounded-md text-sm font-medium border border-slate-200 text-slate-800 bg-white/50 backdrop-blur-md hover:bg-white/80 shadow-sm">
                   Explore Platform
                   <ArrowRight className="h-4 w-4 text-slate-600" />
-                 </Link>
               </Button>
             </m.div>
           </div>
@@ -121,7 +119,7 @@ export default function Hero() {
               <h2 className="text-xl font-medium mb-2">Automated Software Bill of Materials Generation</h2>
               <p className="text-sm leading-relaxed text-white/90">Automatically generate standardized Software Bill of Materials directly from source code and Continuous Integration/Continuous Deployment pipelines.</p>
             </div>
-            <a href="#" className="text-sm font-medium mt-4 hover:underline flex items-center gap-1">Learn More <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" /></a>
+            <Link href="/platform/sbom-management" className="text-sm font-medium mt-4 hover:underline flex items-center gap-1">Learn More <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" /></Link>
           </div>
           {/* Card 2: White Color */}
           <div className="flex flex-col justify-between items-start bg-white/50 backdrop-blur-2xl border border-white/60 rounded-lg p-8 min-h-[220px] shadow-[0_8px_32px_rgba(0,0,0,0.1)] text-slate-800 transform transition-all duration-300 md:hover:-translate-y-2 hover:bg-white/60 relative overflow-hidden group">
@@ -142,7 +140,7 @@ export default function Hero() {
               <h2 className="text-xl font-medium mb-2">Compliance Ready</h2>
               <p className="text-sm leading-relaxed text-slate-700">Meet regulatory requirements instantly with audit-ready reporting and strict governance.</p>
             </div>
-            <a href="#" className="text-sm font-semibold mt-4 text-primary hover:underline flex items-center gap-1">Discover Options <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" /></a>
+            <Link href="/platform/compliance-governance" className="text-sm font-semibold mt-4 text-primary hover:underline flex items-center gap-1">Discover Options <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" /></Link>
           </div>
         </div>
       </m.div>

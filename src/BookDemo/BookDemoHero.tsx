@@ -152,18 +152,14 @@ export default function BookDemoHero() {
               <Button
                 variant="outline"
                 size="lg"
+                onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
                 className="
                   h-12
                   px-7
-
                   border-slate-300
-
                   bg-white/80
-
                   text-slate-800
-
                   backdrop-blur-md
-
                   hover:bg-white
                 "
               >
