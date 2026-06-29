@@ -179,17 +179,19 @@ export default function DemoForm() {
 
                     <div className="grid md:grid-cols-2 gap-3">
                       <div>
-                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Name <span className="text-red-500">*</span></label>
+                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Name <span className="text-primary">*</span></label>
                         <input
                           required
                           placeholder="Enter your name"
+                          pattern="^[^0-9]+$"
+                          title="Name must not contain numbers"
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                           className="w-full bg-white/40 backdrop-blur-sm text-sm border border-primary/20 rounded-md px-4 py-2.5 outline-none focus:ring-2 focus:ring-primary/40 focus:bg-white/60 transition-all placeholder:text-slate-400"
                         />
                       </div>
                       <div>
-                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Company <span className="text-red-500">*</span></label>
+                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Company <span className="text-primary">*</span></label>
                         <input
                           required
                           placeholder="Enter your company name"
@@ -202,7 +204,7 @@ export default function DemoForm() {
 
                     <div className="grid md:grid-cols-2 gap-3">
                       <div>
-                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Designation <span className="text-red-500">*</span></label>
+                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Designation <span className="text-primary">*</span></label>
                         <input
                           required
                           placeholder="Enter your designation"
@@ -212,7 +214,7 @@ export default function DemoForm() {
                         />
                       </div>
                       <div>
-                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Industry <span className="text-red-500">*</span></label>
+                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Industry <span className="text-primary">*</span></label>
                         <select
                           required
                           value={formData.industry}
@@ -232,7 +234,7 @@ export default function DemoForm() {
 
                     <div className="grid md:grid-cols-2 gap-3">
                       <div>
-                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Work Email <span className="text-red-500">*</span></label>
+                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Work Email <span className="text-primary">*</span></label>
                         <input
                           type="email"
                           required
@@ -243,7 +245,7 @@ export default function DemoForm() {
                         />
                       </div>
                       <div>
-                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Phone <span className="text-red-500">*</span></label>
+                        <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Phone <span className="text-primary">*</span></label>
                         <input
                           type="tel"
                           required
@@ -256,7 +258,7 @@ export default function DemoForm() {
                     </div>
 
                     <div>
-                      <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Message <span className="text-red-500">*</span></label>
+                      <label className="block text-[10px] font-bold text-slate-500 tracking-wider mb-2 uppercase">Message <span className="text-primary">*</span></label>
                       <textarea
                         required
                         rows={2}
