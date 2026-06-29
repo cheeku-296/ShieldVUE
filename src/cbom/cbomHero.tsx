@@ -178,6 +178,7 @@ export default function CBOMHero() {
             </Button>
 
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="
@@ -187,31 +188,23 @@ export default function CBOMHero() {
                 rounded-md
                 text-xs sm:text-sm
                 font-medium
-
                 border
                 border-slate-200
-
                 text-slate-800
-
                 bg-white/50
-
                 backdrop-blur-md
-
                 hover:bg-white/80
-
                 flex
-
                 items-center
-
                 justify-center
-
                 gap-1 sm:gap-2
-
                 shadow-sm
               "
             >
-              View Documentation
-              <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              <Link href="https://docs.shieldvue.io" target="_blank" rel="noopener noreferrer">
+                View Documentation
+                <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              </Link>
             </Button>
           </m.div>
         </div>

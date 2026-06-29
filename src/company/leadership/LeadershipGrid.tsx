@@ -138,7 +138,7 @@ export default function LeadershipGrid() {
             "
           >
             Experienced leaders bringing together expertise in software
-            engineering, cybersecurity, enterprise platforms, and product
+            engineering, cryptographic assets, enterprise platforms, and product
             innovation.
           </p>
         </div>

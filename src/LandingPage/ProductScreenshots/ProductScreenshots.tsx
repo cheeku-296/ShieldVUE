@@ -9,7 +9,7 @@ export default function ProductScreenshots() {
     { name: "Dashboard", file: "dashboard_page.png" },
     { name: "Drill Down", file: "drill_down_dashboard.png" },
     { name: "AI Remediation", file: "ai_remediation.png" },
-    { name: "Manual Scheduler", file: "manual_scheduler.png" },
+    { name: "Scheduler Service", file: "scheduler_service.png" },
     { name: "CBOM Dashboard", file: "cbom_dashboard.png" },
     { name: "CBOM File Mapping", file: "cbom_file_mapping.png" },
     { name: "CBOM IVs", file: "cbom_ivs.png" },

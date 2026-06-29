@@ -39,9 +39,15 @@ export default function SharedCTA({ heading, content }: CTAProps) {
                   Book Demo
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="w-full sm:w-auto h-12 px-8 rounded-md text-sm font-medium border border-slate-300 text-slate-700 bg-white/80 hover:bg-white hover:text-slate-900 flex items-center justify-center shadow-sm transition-all">
+              {/* <Button asChild size="lg" variant="outline" className="w-full sm:w-auto h-12 px-8 rounded-md text-sm font-medium border border-slate-300 text-slate-700 bg-white/80 hover:bg-white hover:text-slate-900 flex items-center justify-center shadow-sm transition-all">
                 <Link href="/contact-us" className="flex items-center gap-2">
                   Contact Sales
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </Button> */}
+              <Button asChild size="lg" variant="outline" className="w-full sm:w-auto h-12 px-8 rounded-md text-sm font-medium border border-primary text-primary bg-primary/5 hover:bg-primary/10 flex items-center justify-center shadow-sm transition-all">
+                <Link href="https://docs.shieldvue.io" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  View Docs
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>

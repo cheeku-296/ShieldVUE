@@ -26,7 +26,7 @@ export default function TheProblem() {
     {
       icon: <Scale className="w-7 h-7 text-primary" />,
       bgClass: "bg-primary/10",
-      title: "Automated Compliance",
+      title: "Automated Reporting",
       description: "Seamlessly meet complex regulatory mandates, industry frameworks, and continuous audit requirements with automated reporting."
     },
     {

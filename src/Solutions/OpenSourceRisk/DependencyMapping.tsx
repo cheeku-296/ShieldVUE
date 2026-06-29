@@ -29,9 +29,9 @@ export default function DependencyMapping() {
               <li className="flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-primary" /> Automated SBOM Integration
               </li>
-              <li className="flex items-center gap-3">
+              {/* <li className="flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-primary" /> Real-Time Exploit Path Mapping
-              </li>
+              </li> */}
             </ul>
           </m.div>
 

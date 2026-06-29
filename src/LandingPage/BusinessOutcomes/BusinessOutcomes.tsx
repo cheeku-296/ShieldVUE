@@ -48,7 +48,7 @@ export default function BusinessOutcomes() {
     {
       icon: <Wrench className="w-5 h-5" />,
       title: "Auto Remediation",
-      metric: "90%",
+      metric: "Up to 99%",
       label: "Automated vulnerability patching",
       description: "Automatically generate and apply secure code fixes and patches, drastically reducing the window of exposure for critical vulnerabilities."
     }

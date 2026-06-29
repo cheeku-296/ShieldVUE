@@ -20,28 +20,28 @@ const workflowSteps = [
       "Configure repositories, agents, and scan targets for software analysis.",
   },
   {
-    icon: Boxes,
-    title: "Generate \n SBOM",
-    description:
-      "Generate a complete inventory of software components and dependencies.",
-  },
-  {
     icon: Database,
     title: "Manage Software\nInventory",
     description:
       "Store, organize, and version software inventories in one repository.",
   },
   {
+    icon: Boxes,
+    title: "Generate \n SBOM",
+    description:
+      "Generate a complete inventory of software components and dependencies.",
+  },
+  {
+    icon: GitBranch,
+    title: "Analyse Software\nComposition",
+    description:
+      "Review dependencies, licenses, inventory records, and version changes.",
+  },
+  {
     icon: Radar,
     title: "Identify\nVulnerabilities",
     description:
       "Map components to CVEs, security advisories, and threat intelligence.",
-  },
-  {
-    icon: GitBranch,
-    title: "Analyze Software\nComposition",
-    description:
-      "Review dependencies, licenses, inventory records, and version changes.",
   },
   {
     icon: FileText,
@@ -209,7 +209,6 @@ export default function Workflow() {
                         text-sm
                         font-bold
 
-                        tracking-[0.2em]
 
                         text-primary
                       "

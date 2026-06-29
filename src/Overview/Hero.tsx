@@ -102,7 +102,7 @@ export default function Hero() {
           >
             An integrated platform for software composition
             analysis, vulnerability intelligence, compliance
-            governance, SBOM management, and cryptographic
+            governance, Software Bill of Materials management, and cryptographic
             asset visibility.
           </m.p>
 
@@ -139,6 +139,7 @@ export default function Hero() {
             </Button>
 
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="
@@ -161,8 +162,10 @@ export default function Hero() {
                 shadow-sm
               "
             >
-              View Documentation
-              <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              <Link href="https://docs.shieldvue.io" target="_blank" rel="noopener noreferrer">
+                View Documentation
+                <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              </Link>
             </Button>
           </m.div>
         </div>

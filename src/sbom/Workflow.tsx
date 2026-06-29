@@ -2,10 +2,10 @@
 
 import { m } from "framer-motion";
 import {
-    
-    
-    
-    
+
+
+
+
 } from "lucide-react";
 import Image from "next/image";
 
@@ -105,7 +105,6 @@ export default function Workflow() {
                             duration: 0.7,
                         }}
                         className="
-    mt-8 md:mt-16
 
     overflow-hidden
 

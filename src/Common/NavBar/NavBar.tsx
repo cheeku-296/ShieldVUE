@@ -129,6 +129,8 @@ export default function Navbar() {
                       <Link
                         key={item.href}
                         href={item.href}
+                        target={item.href.startsWith('http') ? '_blank' : undefined}
+                        rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                         className={`
                           block
                           rounded-md
@@ -236,6 +238,8 @@ export default function Navbar() {
                           <Link
                             key={item.href}
                             href={item.href}
+                            target={item.href.startsWith('http') ? '_blank' : undefined}
+                            rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                             onClick={() => setIsMobileMenuOpen(false)}
                             className={`flex items-center text-sm font-medium py-2.5 px-3 rounded-lg hover:bg-primary/5 hover:text-primary transition-colors ${isActiveItem ? 'bg-primary/5 text-primary' : 'text-slate-600'}`}
                           >

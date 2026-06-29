@@ -4,6 +4,7 @@ import { useState } from "react";
 import { m, AnimatePresence } from "framer-motion";
 import { ChevronDown, Zap, Lock, DollarSign, Sliders, Calendar } from "lucide-react";
 import { Button } from "@/Common/UI/Button/Button";
+import Link from "next/link";
 
 const categories = [
   { id: "getting-started", title: "Getting Started", icon: Zap, articleCount: 5 },
@@ -25,7 +26,7 @@ const faqsByCategory: Record<string, { question: string; answer: string }[]> = {
     },
     {
       question: "What kind of ROI can I expect from implementing your AI platform?",
-      answer: "Most customers see a 40% reduction in time spent on manual vulnerability triage and compliance reporting within the first month of deployment."
+      answer: "Most customers see up to 99% reduction in time spent on manual vulnerability triage and compliance reporting within the first month of deployment."
     },
     {
       question: "Can the AI platform integrate with my existing tools?",
@@ -175,7 +176,7 @@ export default function FAQs() {
                           <h4 className={`text-lg font-medium font-['Clash_Grotesk'] transition-colors ${isActive ? "text-primary" : "text-slate-900"}`}>
                             {category.title}
                           </h4>
-                          <span className="text-xs text-slate-400 font-medium">{category.articleCount} answers</span>
+                          <span className="text-xs text-slate-400 font-medium">{faqsByCategory[category.id]?.length || 0} answers</span>
                         </div>
                       </div>
                       <m.div
@@ -198,9 +199,9 @@ export default function FAQs() {
                 Can&apos;t find the answer you&apos;re looking for? Our support team is here to help.
               </p>
               <Button variant="secondary" className="w-full bg-white text-primary hover:bg-slate-50 font-semibold py-6" asChild>
-                <a href="mailto:support@apmosys.com">
+                <Link href="/contact-us">
                   Contact Support
-                </a>
+                </Link>
               </Button>
             </div>
           </div>

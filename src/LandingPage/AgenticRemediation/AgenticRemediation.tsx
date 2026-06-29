@@ -8,8 +8,8 @@ export default function AgenticRemediation() {
     {
       icon: <Bot className="w-7 h-7" />,
       bgClass: "bg-primary/10 text-primary",
-      title: "Agentic AI Resolution",
-      description: "Autonomous AI agents that actively analyze, plan, and execute vulnerability fixes without manual intervention."
+      title: "SLM based AI Remediation Engine",
+      description: "Autonomous SLM models that actively analyze, plan, and execute vulnerability fixes without manual intervention."
     },
     {
       icon: <Wrench className="w-7 h-7" />,
@@ -20,8 +20,8 @@ export default function AgenticRemediation() {
     {
       icon: <GitPullRequest className="w-7 h-7" />,
       bgClass: "bg-primary/10 text-primary",
-      title: "Auto-PR Creation",
-      description: "Seamlessly integrate with your CI/CD to automatically create tested, review-ready pull requests for security updates."
+      title: "Automated Merge Request Creation",
+      description: "Seamlessly integrate with your Continuous Integration/Continuous Deployment pipelines to automatically create tested, review-ready merge requests for security updates."
     },
     {
       icon: <ShieldAlert className="w-7 h-7" />,
@@ -40,6 +40,12 @@ export default function AgenticRemediation() {
       bgClass: "bg-primary/10 text-primary",
       title: "Dependency Auto-Updates",
       description: "Automatically bump vulnerable dependencies to secure versions while ensuring backward compatibility."
+    },
+    {
+      icon: <Zap className="w-7 h-7" />,
+      bgClass: "bg-primary/10 text-primary",
+      title: "ROI Based Remediation",
+      description: "Helps fix maximum vulnerabilities with minimum efforts and fixes."
     }
   ];
 
@@ -76,10 +82,10 @@ export default function AgenticRemediation() {
               >
                 
                 <h2 className="text-3xl md:text-5xl font-medium text-slate-900 tracking-[-0.46px] leading-[1.1] font-['Clash_Grotesk']">
-                  Agentic AI <br className="hidden lg:block" />Based <br className="hidden lg:block" /> <span className="text-primary">Remediation.</span>
+                  SLM Based <br className="hidden lg:block" />AI Remediation <br className="hidden lg:block" /> <span className="text-primary">Engine.</span>
                 </h2>
                 <p className="mt-4 md:mt-6 text-base md:text-lg text-slate-600 leading-relaxed max-w-lg">
-                  Move beyond detection with our advanced Agentic AI remediation engine. ShieldVUE doesn&apos;t just find vulnerabilities—it autonomously resolves them, reducing your Mean Time To Remediation (MTTR) from weeks to minutes.
+                  Move beyond detection with our advanced SLM based AI Remediation Engine. ShieldVUE doesn&apos;t just find vulnerabilities—it autonomously resolves them, reducing your Mean Time To Remediation from weeks to minutes.
                 </p>
               </m.div>
             </div>

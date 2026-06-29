@@ -56,6 +56,10 @@ export const navigation = [
         title: "FAQs",
         href: "/resources/faqs",
       },
+      {
+        title: "Docs",
+        href: "https://docs.shieldvue.io",
+      },
     ],
   },
   {

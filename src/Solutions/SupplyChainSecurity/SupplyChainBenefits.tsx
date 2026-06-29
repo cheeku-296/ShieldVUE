@@ -4,7 +4,7 @@
 
 export default function SupplyChainBenefits() {
   const metrics = [
-    { value: "99%", label: "Reduction in Manual Tracking" },
+    { value: "100%", label: "Reduction in Manual Tracking" },
     { value: "100%", label: "CI/CD Pipeline Coverage" },
     { value: "Zero", label: "Unknown Dependencies" },
   ];

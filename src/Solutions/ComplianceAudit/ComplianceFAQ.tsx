@@ -19,6 +19,10 @@ export default function ComplianceFAQ() {
     {
       question: "How is audit evidence secured?",
       answer: "All generated reports, SBOMs, and compliance logs are cryptographically signed and stored in a read-only, tamper-evident ledger ensuring absolute integrity during audits."
+    },
+    {
+      question: "How does ShieldVUE support CERT-In aligned compliance?",
+      answer: "ShieldVUE ensures your software supply chain aligns with CERT-In guidelines by enabling continuous vulnerability scanning, maintaining comprehensive Software Bill of Materials, and facilitating timely incident reporting and remediation mechanisms."
     }
   ];
 

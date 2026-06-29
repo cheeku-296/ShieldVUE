@@ -159,7 +159,7 @@ export default function SBOMHero() {
           >
             Automatically generate, manage, track, and govern
             Software Bills of Materials across source code,
-            containers, binaries, packages, and CI/CD pipelines.
+            containers, binaries, packages, and Continuous Integration/Continuous Deployment pipelines.
             Gain complete dependency visibility and maintain
             audit-ready software inventories at scale.
           </m.p>
@@ -207,6 +207,7 @@ export default function SBOMHero() {
             </Button>
 
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="
@@ -216,31 +217,23 @@ export default function SBOMHero() {
                 rounded-md
                 text-xs sm:text-sm
                 font-medium
-
                 border
                 border-slate-200
-
                 text-slate-800
-
                 bg-white/50
-
                 backdrop-blur-md
-
                 hover:bg-white/80
-
                 flex
-
                 items-center
-
                 justify-center
-
                 gap-1 sm:gap-2
-
                 shadow-sm
               "
             >
-              View Documentation
-              <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              <Link href="https://docs.shieldvue.io" target="_blank" rel="noopener noreferrer">
+                View Documentation
+                <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              </Link>
             </Button>
           </m.div>
 

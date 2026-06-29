@@ -48,7 +48,7 @@ const outcomes = [
   },
   {
     icon: Zap,
-    metric: "<1h",
+    metric: "<30 mins",
     title: "Impact Assessment",
     description:
       "Rapidly identify affected applications and dependencies when new vulnerabilities or security advisories emerge.",
