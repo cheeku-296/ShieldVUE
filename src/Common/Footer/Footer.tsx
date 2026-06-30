@@ -34,11 +34,11 @@ export default function Footer() {
           {/* Controls & Socials */}
           <div className="flex flex-col items-center gap-6 md:flex-row md:gap-8">
             <div className="flex items-center gap-6 text-sm text-slate-600 font-medium">
-              <Link href="#" className="transition-colors hover:text-primary">
+              <Link href="/privacy" className="transition-colors hover:text-primary">
                 Privacy Policy
               </Link>
-              <Link href="#" className="transition-colors hover:text-primary">
-                Terms of Service
+              <Link href="/terms" className="transition-colors hover:text-primary">
+                Terms & Conditions
               </Link>
             </div>
 
