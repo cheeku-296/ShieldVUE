@@ -8,7 +8,7 @@ export default function LeadershipPage() {
     <main className="overflow-x-hidden">
       <LeadershipHero />
       <LeadershipIntro />
-      <LeadershipGrid />
+      {/* <LeadershipGrid /> */}
       <CTA />
     </main>
   );
