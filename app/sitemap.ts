@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { allBlogs } from '@/Resources/Blogs/BlogData';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://shieldvue.com';
+  const baseUrl = 'https://shieldvue.io';
 
   const staticRoutes = [
     '',

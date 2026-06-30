@@ -119,7 +119,7 @@ export default function Hero() {
               <h2 className="text-xl font-medium mb-2">Automated Software Bill of Materials Generation</h2>
               <p className="text-sm leading-relaxed text-white/90">Automatically generate standardized Software Bill of Materials directly from source code and Continuous Integration/Continuous Deployment pipelines.</p>
             </div>
-            <Link href="/platform/sbom-management" className="text-sm font-medium mt-4 hover:underline flex items-center gap-1">Learn More <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" /></Link>
+            <Link href="/platform/sbom-management" aria-label="Learn more about SBOM Management" className="text-sm font-medium mt-4 hover:underline flex items-center gap-1">Learn More <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" /></Link>
           </div>
           {/* Card 2: White Color */}
           <div className="flex flex-col justify-between items-start bg-white/50 backdrop-blur-2xl border border-white/60 rounded-lg p-8 min-h-[220px] shadow-[0_8px_32px_rgba(0,0,0,0.1)] text-slate-800 transform transition-all duration-300 md:hover:-translate-y-2 hover:bg-white/60 relative overflow-hidden group">

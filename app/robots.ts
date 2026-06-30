@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://shieldvue.com/sitemap.xml',
+    sitemap: 'https://shieldvue.io/sitemap.xml',
   };
 }

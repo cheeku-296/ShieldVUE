@@ -24,6 +24,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shieldvue.io"),
   title: {
     default: "ShieldVUE | Intelligent Open Source & Supply Chain Security",
     template: "%s | ShieldVUE"
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://shieldvue.com",
+    url: "https://shieldvue.io",
     title: "ShieldVUE | Intelligent Open Source & Supply Chain Security",
     description: "Enterprise-grade automated SBOM and CBOM intelligence. Secure your software supply chain, manage open-source risks, and ensure continuous compliance.",
     siteName: "ShieldVUE",

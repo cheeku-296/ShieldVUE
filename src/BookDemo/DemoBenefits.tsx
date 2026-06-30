@@ -233,6 +233,7 @@ export default function DemoBenefits() {
 
                 <Link
                   href={item.href}
+                  aria-label={`Learn more about ${item.title}`}
                   className="
                     mt-8
                     flex
